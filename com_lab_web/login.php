@@ -21,11 +21,11 @@
                 <div class="col-lg-6">
                     <!-- admin input -->
                     <label for="text">Name :-</label>
-                    <input type="text" id="Admin" placeholder="Name of user" class="rounded p-2 ms-lg-2" /><br>
+                    <input type="text" name="Name" id="Name" placeholder="Name of user" class="rounded p-2 ms-lg-2" /><br>
 
                     <!-- branch input -->
                     <label for="text">Branch :-</label>
-                    <input type="text" id="Branch" placeholder="Enter Branch" class="mt-3 rounded p-2 ms-lg-1" /><br>
+                    <input type="text" id="Branch" name="Branch" placeholder="Enter Branch" class="mt-3 rounded p-2 ms-lg-1" /><br>
 
                    
                     <div class="dropdown">
@@ -42,13 +42,6 @@
                     <label for="text">Lab :-</label>
                     <input type="text" id="Lab" placeholder="Enter Lab" class="mt-3 rounded p-2 ms-lg-4" /><br>
                 </div>
-
-
-
-
-
-
-
                 <div class="col-lg-6">
                     <div class="inner-div ms-lg-5">
                         <!-- user name inpute -->
@@ -57,7 +50,7 @@
                                 <label for="text">User Name :-</label>
                             </div>
                             <div class="col-lg-12">
-                                <input type="text" id="Uname" placeholder="Enter User Name " class="mt-3 rounded p-2" /><br>
+                                <input type="text" name="Uname" id="Uname" placeholder="Enter User Name " class="mt-3 rounded p-2" /><br>
                             </div>
                         </div>
                         <!-- password input -->
@@ -66,7 +59,7 @@
                                 <label for="text">Password :-</label>
                             </div>
                             <div class="col-lg-12">
-                                <input type="password" id="Password" placeholder="Enter Password" class="mt-3 rounded p-2" /><br>
+                                <input type="password" name="Password" id="Password" placeholder="Enter Password" class="mt-3 rounded p-2" /><br>
                             </div>
                         </div>
                         <!-- conform password input -->
@@ -76,17 +69,29 @@
                                 <label for="text">Confirm Password :-</label>
                             </div>
                             <div class="col-lg-12">
-                                <input type="password" id="Password" placeholder="Enter Password" class="mt-3 rounded p-2" />
+                                <input type="password" id="Confirm_Password" name="Confirm_Password" placeholder="Enter Password" class="mt-3 rounded p-2" />
                             </div>
 
                         </div>
                     </div>
                 </div>
 
-                <button class="fs-4 w-50 border-0 shadow-2 fw-bold mt-4 rounded-3 bg-primary text-white mx-auto">Submit</button>
+                <button class="fs-4 w-50 border-0 shadow-2 fw-bold mt-4 rounded-3 bg-primary text-white mx-auto" id="Submit">Submit</button>
             </div>
         </div>
+<script>
 
+const Name = document.getElementById("Name");
+      const Uname = document.getElementById("Uname");
+      const Password = document.getElementById("Password");
+      const Confirm_Password =document.getElementById("Confirm_Password")
+
+
+    document.getElementById("Submit").addEventListener("click", function () {
+        alert(`User is successfully created
+        \n name : ${Name.value} \n User name : ${Uname.value} \n Password : ${Password.value}`);
+      });
+</script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -94,5 +99,3 @@
 </body>
 
 </html>
-
-sidebar
