@@ -2123,7 +2123,7 @@ include('../common/header_link.php');
             <div class="layout-overlay layout-menu-toggle"></div>
         </div>
 
+    <?php include('../common/footer_link.php'); ?>
 </body>
 
 </html>
-<!DOCTYPE html>
