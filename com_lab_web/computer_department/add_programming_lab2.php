@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <a href="./networking_lab.php" class="btn btn-secondary">Back</a>
+                                    <a href="./programming_lab2.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
 

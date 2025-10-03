@@ -42,7 +42,7 @@ include('../common/header_link.php');
                                 </div>
 
                                 <div class="col-lg-6 d-flex justify-content-end">
-                                    <a href="add-events.php">
+                                    <a href="./add_networking_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
                                 </div>
@@ -92,7 +92,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -128,7 +128,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -164,7 +164,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -201,7 +201,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -237,7 +237,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -274,7 +274,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -311,7 +311,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -348,7 +348,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -385,7 +385,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -422,7 +422,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -459,7 +459,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -497,7 +497,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -534,7 +534,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -570,7 +570,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -607,7 +607,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -643,7 +643,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -680,7 +680,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -716,7 +716,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -752,7 +752,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -788,7 +788,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
                                                     </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                         <button type="button" class="btn rounded-pill btn-primary">
                                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                                         </button>
@@ -824,7 +824,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -859,7 +859,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -894,7 +894,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -930,7 +930,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -968,7 +968,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1006,7 +1006,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1042,7 +1042,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1078,7 +1078,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1116,7 +1116,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1153,7 +1153,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1190,7 +1190,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1227,7 +1227,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1264,7 +1264,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1301,7 +1301,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1338,7 +1338,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1374,7 +1374,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1410,7 +1410,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1447,7 +1447,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1483,7 +1483,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1520,7 +1520,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1558,7 +1558,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1595,7 +1595,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1631,7 +1631,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1668,7 +1668,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1706,7 +1706,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1742,7 +1742,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1779,7 +1779,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1814,7 +1814,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1849,7 +1849,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1885,7 +1885,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1922,7 +1922,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1960,7 +1960,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1997,7 +1997,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2033,7 +2033,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2069,7 +2069,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2107,7 +2107,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2144,7 +2144,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2182,7 +2182,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2217,7 +2217,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2258,7 +2258,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2295,7 +2295,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2333,7 +2333,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>

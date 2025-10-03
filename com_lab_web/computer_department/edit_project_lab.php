@@ -148,7 +148,7 @@ if (isset($_POST['update'])) {
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Edit</button>
-                                    <a href="show_Toppers.php" class="btn btn-secondary">Back</a>
+                                    <a href="./project_lab.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
 
