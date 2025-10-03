@@ -62,6 +62,8 @@ include('../common/header_link.php');
                                             <th>Quantity</th>
                                             <th>Amount</th>
                                             <th>Remark</th>
+                                            <th>Configration</th>
+                                            <th>Maintenance</th>
                                             <th class="text-center">Action</th>
 
 
@@ -79,6 +81,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -111,6 +117,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -143,6 +153,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -176,6 +190,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -208,6 +226,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -241,6 +263,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -274,6 +300,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -307,6 +337,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -340,6 +374,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -373,6 +411,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -406,6 +448,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -440,6 +486,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -473,6 +523,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -505,6 +559,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -538,6 +596,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -570,6 +632,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -603,6 +669,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -635,6 +705,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -667,6 +741,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -699,6 +777,10 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                             <td>
                                                 <div>
                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -731,6 +813,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -762,6 +848,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -793,6 +883,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -825,6 +919,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -859,6 +957,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -893,6 +995,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -925,6 +1031,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -957,6 +1067,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -991,6 +1105,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1024,6 +1142,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1057,6 +1179,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1090,6 +1216,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1123,6 +1253,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1156,6 +1290,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1189,6 +1327,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1221,6 +1363,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1253,6 +1399,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1286,6 +1436,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1318,6 +1472,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1351,6 +1509,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1385,6 +1547,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1418,6 +1584,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1450,6 +1620,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1483,6 +1657,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1517,6 +1695,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1549,6 +1731,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1582,6 +1768,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1613,6 +1803,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1644,6 +1838,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1676,6 +1874,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1709,6 +1911,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1743,6 +1949,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1776,6 +1986,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1808,6 +2022,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1840,6 +2058,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1874,6 +2096,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1907,6 +2133,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1941,6 +2171,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -1972,6 +2206,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -2009,6 +2247,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -2042,6 +2284,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
@@ -2076,6 +2322,10 @@ include('../common/header_link.php');
                                         <td>1</td>
                                         <td>46,500</td>
                                         <td>-</td>
+                                        <td>HCLDesktopIntelCore
+                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                                Keyboard,Optical Mouse.</td>
+                                            <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">

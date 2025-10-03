@@ -63,6 +63,8 @@ include('../common/header_link.php');
                                             <th>Quantity</th>
                                             <th>Amount</th>
                                             <th>Remark</th>
+                                            <th>Configration</th>
+                                            <th>Maintenance</th>
                                             <th class="text-center">Action</th>
 
 
@@ -82,27 +84,29 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
-                                                <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
-                                                        <button type="button" class="btn rounded-pill btn-success">
-                                                            <i class="bx bx-show me-1"></i> Show
-                                                        </button>
-                                                    </a>
-                                                    <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
-                                                        <button type="button" class="btn rounded-pill btn-primary">
-                                                            <i class="bx bx-edit-alt me-1"></i> Edit
-                                                        </button>
-                                                    </a>
-                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
-                                                        <button type="button" class="btn rounded-pill btn-danger">
-                                                            <i class="bx bx-trash me-1"></i> Delete
-                                                        </button>
-                                                    </a>
+                                            <div>
+                                                <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <button type="button" class="btn rounded-pill btn-success">
+                                                        <i class="bx bx-show me-1"></i> Show
+                                                    </button>
+                                                </a>
+                                                <a href="edit_Student-Association.php?id=<?php echo $student_row['id']; ?>" class="text-white">
+                                                    <button type="button" class="btn rounded-pill btn-primary">
+                                                        <i class="bx bx-edit-alt me-1"></i> Edit
+                                                    </button>
+                                                </a>
+                                                <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <button type="button" class="btn rounded-pill btn-danger">
+                                                        <i class="bx bx-trash me-1"></i> Delete
+                                                    </button>
+                                                </a>
 
-                                                   
 
-                                                </div>
+
+                                            </div>
                                             </td>
                                         </tr>
 
@@ -117,9 +121,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -134,7 +140,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
                                                     </a>
-                                                   
+
                                                 </div>
                                             </td>
                                         </tr>
@@ -150,9 +156,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -167,7 +175,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -184,9 +192,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -201,7 +211,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -219,9 +229,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -236,7 +248,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -254,9 +266,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -271,7 +285,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -288,9 +302,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -305,7 +321,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -322,9 +338,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -339,7 +357,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -356,9 +374,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -373,7 +393,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -391,9 +411,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -408,7 +430,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -425,9 +447,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -442,7 +466,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -459,9 +483,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -476,7 +502,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -493,9 +519,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -510,7 +538,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -526,9 +554,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -543,7 +573,7 @@ include('../common/header_link.php');
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
 
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -560,9 +590,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -576,7 +608,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -593,9 +625,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -609,7 +643,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -627,9 +661,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -643,7 +679,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -660,9 +696,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -676,7 +714,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -694,9 +732,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -710,7 +750,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -728,9 +768,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -744,7 +786,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -762,9 +804,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -778,7 +822,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -796,9 +840,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -812,7 +858,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -830,9 +876,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -846,7 +894,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -864,9 +912,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -880,7 +930,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -898,9 +948,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -914,7 +966,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -933,9 +985,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -949,7 +1003,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -958,7 +1012,7 @@ include('../common/header_link.php');
                                         <tr>
 
                                             <td>28</td>
-                                             
+
                                             <td>CPU-HP Desktop model,HP Keyboard,HP Mouse,HP Monitor</td>
                                             <td>CSMSSPOLY/24-25/CO/CPU/49</td>
                                             <td>28</td>
@@ -968,9 +1022,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -984,7 +1040,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
@@ -992,7 +1048,7 @@ include('../common/header_link.php');
                                         <tr>
 
                                             <td>29</td>
-                                             
+
                                             <td>CPU-HP Desktop model,HP Keyboard,HP Mouse,HP Monitor</td>
                                             <td>CSMSSPOLY/24-25/CO/CPU/50</td>
                                             <td>29</td>
@@ -1002,9 +1058,11 @@ include('../common/header_link.php');
                                             <td>1</td>
                                             <td>46,500</td>
                                             <td>-</td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <div>
-                                                     <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
+                                                    <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
                                                         <button type="button" class="btn rounded-pill btn-success">
                                                             <i class="bx bx-show me-1"></i> Show
                                                         </button>
@@ -1018,7 +1076,7 @@ include('../common/header_link.php');
                                                         <button type="button" class="btn rounded-pill btn-danger">
                                                             <i class="bx bx-trash me-1"></i> Delete
                                                         </button>
-                                                       
+
                                                     </a>
                                                 </div>
                                             </td>
