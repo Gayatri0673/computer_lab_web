@@ -60,12 +60,12 @@ if (isset($_POST['update'])) {
                 <?php include '../common/header.php'; ?>
                 <!-- / Navbar -->
 
-                <div class="container">
+                <div class="container-p-x">
                     <div class="card my-4">
                         <h5 class="card-header">Edit Details</h5>
                         <div class="card-body">
                             <form method="POST">
-                                <div class="row">
+                                <div class="row mt-3">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" name="Nameo_f_Equipment" required />
