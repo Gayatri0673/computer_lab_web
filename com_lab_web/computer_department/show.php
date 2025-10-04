@@ -14,7 +14,7 @@
         
         <!-- Left image -->
         <div class="col-md-4">
-          <img src="csmss_poly_dashboard/assets/img/award-recognition/main.jpg" 
+          <img src="../assets/img/computer.png" 
                class="img-fluid rounded-start" alt="Equipment">
         </div>
 
@@ -44,9 +44,9 @@
 
             <!-- Action Buttons -->
             <div class="d-flex gap-2">
-              <a href="#" class="btn btn-success">Update</a>
+              <a href="edit_networking_lab.php" class="btn btn-success">Update</a>
               <a href="#" class="btn btn-danger">Delete</a>
-              <a href="#" class="btn btn-secondary">Back</a>
+              <a href="networking_lab.php" class="btn btn-secondary">Back</a>
             </div>
 
           </div>

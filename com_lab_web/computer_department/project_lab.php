@@ -32,14 +32,14 @@ include('../common/header_link.php');
                 <div class="content-wrapper">
                     <!-- Content -->
 
-                    <div class="container-xxl flex-grow-1 container-p-y">
+                    <div class="container-p-x flex-grow-1 container-p-y">
                         <h4 class="text-muted fw-bold py-3 mb-4">PROJECT LAB</h4>
 
                         <!-- Hoverable Table rows -->
                         <div class="card">
                             <div class="row">
                                 <div class="col-lg-6 ">
-                                    <div class="h5 card-header"></div>
+                                    
                                 </div>
 
                                 <div class="col-lg-6 d-flex justify-content-end">
