@@ -57,7 +57,7 @@ if (isset($_POST['update'])) {
                 <?php include '../common/header.php'; ?>
                 <!-- / Navbar -->
 
-                <div class="container">
+                <div class="container-p-x">
                     <div class="card my-4">
                         <h5 class="card-header">Edit Details</h5>
                         <div class="card-body">

@@ -28,7 +28,7 @@
               <li class="list-group-item"><strong>Name of Equipment:</strong>CPU-HP Desktop Model,HP Keyboard,HP Mouse,HP Monitor</li>
               <li class="list-group-item"><strong>Accession No:</strong>CSMSSPOLY/24-25/CO/CPU/01 </li>
               <li class="list-group-item"><strong>System No:</strong> 01</li>
-              <li class="list-group-item"><strong>Amount:</strong> ₹ 55,000</li>
+              <li class="list-group-item"><strong>Amount:</strong> ₹ 46,500</li>
               <li class="list-group-item"><strong>Quantity:</strong> 10</li>
               <li class="list-group-item"><strong>Configuration:</strong> 8GB RAM, 512GB SSD, Intel UHD</li>
               <li class="list-group-item"><strong>Maintenance:</strong> Change the keyboard and mouse</li>
