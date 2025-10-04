@@ -49,50 +49,30 @@ function isMenuOpen($pages)
     </li>
 
     <!-- Home Menu -->
-    <li class="menu-item <?= isMenuOpen(['slider.php','latest_update.php','latest_news_home.php','event.php','courses.php','counters.php','members.php','partner.php']) ?>">
+    <li class="menu-item <?= isMenuOpen(['networking_lab.php','programming_lab1.php','programming_lab2.php','project_lab.php']) ?>">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
-        <div data-i18n="Layouts">Home</div>
+        <div data-i18n="Layouts">Computer Department</div>
       </a>
       <ul class="menu-sub">
-        <li class="menu-item <?= isActive(['slider.php']) ?>">
-          <a href="../slider/slider.php" class="menu-link">
-            <div>Slider</div>
+        <li class="menu-item <?= isActive(['networking_lab.php']) ?>">
+          <a href="networking_lab.php" class="menu-link">
+            <div>Networking Lab</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['latest_update.php']) ?>">
-          <a href="../latest_update/latest_update.php" class="menu-link">
-            <div>Latest Updates</div>
+        <li class="menu-item <?= isActive(['programming_lab1.php']) ?>">
+          <a href="programming_lab1.php" class="menu-link">
+            <div>Programming Lab1</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['latest_news_home.php']) ?>">
-          <a href="../latest_news/latest_news_home.php" class="menu-link">
-            <div>Latest News</div>
+        <li class="menu-item <?= isActive(['programming_lab2.php']) ?>">
+          <a href="programming_lab2.php" class="menu-link">
+            <div>Programming Lab2</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['event.php']) ?>">
-          <a href="../event-home/event.php" class="menu-link">
-            <div>Events</div>
-          </a>
-        </li>
-        <li class="menu-item <?= isActive(['courses.php']) ?>">
-          <a href="../courses/courses.php" class="menu-link">
-            <div>Courses</div>
-          </a>
-        </li>
-        <li class="menu-item <?= isActive(['counters.php']) ?>">
-          <a href="../counters/counters.php" class="menu-link">
-            <div>Counters</div>
-          </a>
-        </li>
-        <li class="menu-item <?= isActive(['members.php']) ?>">
-          <a href="../members/members.php" class="menu-link">
-            <div>Members</div>
-          </a>
-        </li>
-        <li class="menu-item <?= isActive(['partner.php']) ?>">
-          <a href="../partner/partner.php" class="menu-link">
-            <div>Partner</div>
+        <li class="menu-item <?= isActive(['project_lab.php']) ?>">
+          <a href="project_lab.php" class="menu-link">
+            <div>Project Lab</div>
           </a>
         </li>
       </ul>

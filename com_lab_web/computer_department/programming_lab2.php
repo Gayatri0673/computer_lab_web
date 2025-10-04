@@ -24,28 +24,15 @@
   <?php
     include('../common/header_link.php');
   ?>
-  <!-- <style>
-    .page-para {
-  width: 300px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-}
-.one{
-  width:50px;
-  height:50px;
-}
-  </style>
-  -->
+  
   <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
         <!-- Menu -->
        <?php
-    include('../common/sidebar.php');
-  ?>
+            include '../common/sidebar.php';
+            ?>
         <!-- / Menu -->
 
         <!-- Layout container -->
@@ -60,7 +47,7 @@
           <div class="content-wrapper">
             <!-- Content -->
 
-            <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="container-p-x flex-grow-1 container-p-y">
               <h4 class="text-muted fw-bold py-3 mb-4">COMPUTER CENTER</h4>
 
              
@@ -70,7 +57,7 @@
               <div class="card">
                 <div class="row">
                   <div class="col-lg-6 ">
-                    <div class="h5 card-header">Programming Lab 2</div>
+                    <h5 class="card-header">Programming Lab 2</h5>
                   </div>
                  
                   <div class="col-lg-6 d-flex justify-content-end">

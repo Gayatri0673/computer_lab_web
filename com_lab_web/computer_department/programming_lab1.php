@@ -44,8 +44,8 @@
       <div class="layout-container">
         <!-- Menu -->
        <?php
-    include('../common/sidebar.php');
-  ?>
+            include '../common/sidebar.php';
+            ?>
         <!-- / Menu -->
 
         <!-- Layout container -->
@@ -60,7 +60,7 @@
           <div class="content-wrapper">
             <!-- Content -->
 
-            <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="container-p-x flex-grow-1 container-p-y">
               <h4 class="text-muted fw-bold py-3 mb-4">COMPUTER CENTER</h4>
 
              
