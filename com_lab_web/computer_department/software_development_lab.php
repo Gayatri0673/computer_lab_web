@@ -73,6 +73,9 @@ include('../common/header_link.php');
                                 </div>
 
                                 <div class="col-lg-6 d-flex justify-content-end">
+                                          <div class="text-center">
+                <button onclick="window.print()" class="btn btn-primary m-4">Print</button>
+            </div>
                                     <a href="./add_software_development_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
