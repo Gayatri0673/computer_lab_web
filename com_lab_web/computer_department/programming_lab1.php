@@ -74,6 +74,9 @@
                   </div>
                  
                   <div class="col-lg-6 d-flex justify-content-end">
+                                <div class="text-center">
+                <button onclick="window.print()" class="btn btn-primary m-4">Print</button>
+            </div>
                     <a href="./add_programming_lab1.php">
                       <button type="button" class="btn btn-primary m-4">ADD+</button>
                     </a>
