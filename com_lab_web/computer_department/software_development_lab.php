@@ -73,12 +73,15 @@ include('../common/header_link.php');
                                 </div>
 
                                 <div class="col-lg-6 d-flex justify-content-end">
-                                          <div class="text-center">
-                <button onclick="window.print()" class="btn btn-primary m-4">Print</button>
-            </div>
+                                <input type="text" class="form-control border-black m-4 shadow-none" placeholder="Search..." aria-label="Search...">
+                             
                                     <a href="./add_software_development_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
+
+                                    <div class="text-center">
+                                        <button onclick="window.print()" class="btn btn-primary m-4">Print</button>
+                                    </div>
                                 </div>
                             </div>
 
