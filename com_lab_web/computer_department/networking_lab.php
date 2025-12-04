@@ -15,7 +15,7 @@ include('../common/header_link.php');
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-           <?php
+            <?php
             include '../common/sidebar.php';
             ?>
             <!-- / Menu -->
@@ -42,12 +42,16 @@ include('../common/header_link.php');
                                 </div>
 
                                 <div class="col-lg-6 d-flex justify-content-end">
-                                                <div class="text-center">
-                <button onclick="window.print()" class="btn btn-primary m-4">Print</button>
-            </div>
+                                  
+                                <input type="text" class="form-control border-black m-4 shadow-none" placeholder="Search..." aria-label="Search...">
+
                                     <a href="./add_networking_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
+
+                                    <div class="text-center">
+                                        <button onclick="window.print()" class="btn btn-primary m-4">Print</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -817,9 +821,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -827,7 +831,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -852,9 +856,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -862,7 +866,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -887,9 +891,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -897,7 +901,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -923,9 +927,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -933,7 +937,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -961,9 +965,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -971,7 +975,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -999,9 +1003,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1009,7 +1013,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1035,9 +1039,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1045,7 +1049,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1071,9 +1075,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1081,7 +1085,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1109,9 +1113,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1119,7 +1123,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1146,9 +1150,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1156,7 +1160,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1183,9 +1187,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1193,7 +1197,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1220,9 +1224,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1230,7 +1234,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1257,9 +1261,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1267,7 +1271,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1294,9 +1298,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1304,7 +1308,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1331,9 +1335,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1341,7 +1345,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1367,9 +1371,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1377,7 +1381,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1403,9 +1407,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1413,7 +1417,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1440,9 +1444,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1450,7 +1454,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1476,9 +1480,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1486,7 +1490,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1513,9 +1517,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1523,7 +1527,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1551,9 +1555,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1561,7 +1565,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1588,9 +1592,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1598,7 +1602,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1624,9 +1628,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1634,7 +1638,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1661,9 +1665,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1671,7 +1675,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1699,9 +1703,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1709,7 +1713,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1735,9 +1739,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1745,7 +1749,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1772,9 +1776,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1782,7 +1786,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1807,9 +1811,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1817,7 +1821,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1842,9 +1846,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1852,7 +1856,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1878,9 +1882,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1888,7 +1892,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1915,9 +1919,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1925,7 +1929,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1953,9 +1957,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -1963,7 +1967,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1990,9 +1994,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2000,7 +2004,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2026,9 +2030,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2036,7 +2040,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2062,9 +2066,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2072,7 +2076,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2100,9 +2104,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2110,7 +2114,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2137,9 +2141,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2147,7 +2151,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2175,9 +2179,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2185,7 +2189,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2210,9 +2214,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2220,7 +2224,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2251,9 +2255,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2261,7 +2265,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2288,9 +2292,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2298,7 +2302,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2326,9 +2330,9 @@ include('../common/header_link.php');
                                         <td>46,500</td>
                                         <td>-</td>
                                         <td>HCLDesktopIntelCore
-                                                2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
-                                                Keyboard,Optical Mouse.</td>
-                                            <td></td>
+                                            2.53GHzG-31Chipset 1GB RAM,160 HDD,15.6 LCD,
+                                            Keyboard,Optical Mouse.</td>
+                                        <td></td>
                                         <td>
                                             <div>
                                                 <a href="delete_Student-Association.php">
@@ -2336,7 +2340,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                    <a href="edit_networking_lab.php" class="text-white">
+                                                <a href="edit_networking_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
