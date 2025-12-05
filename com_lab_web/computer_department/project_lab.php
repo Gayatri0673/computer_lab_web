@@ -12,9 +12,6 @@ if (isset($_POST['delete_btn'])) {
 }
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html
     lang="en"

@@ -1,25 +1,36 @@
 <?php
- // DB connection
+ $conn = mysqli_connect("localhost", "root", "", "computer");
+
+if (!$conn) {
+    die("Database Connection Failed: " . mysqli_connect_error());
+}
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['student_name'];
-    $percentage = $_POST['percentage'];
-    $class_awarded = $_POST['class_awarded'];
-    $department = $_POST['department'];
-    $year = $_POST['year'];
 
+    $Name_of_Equipment = $_POST['Name_of_Equipment'];
+    $Accession_No = $_POST['Accession_No'];
+    $Configration = $_POST['Configration'];
+    $Maintenance = $_POST['Maintenance'];
+    $System_no = $_POST['System_no'];
+    $GRN_no = $_POST['GRN_no'];
+    $Unit_Rate = $_POST['Unit_Rate'];
+    $Quantity = $_POST['Quantity'];
+    $Amount = $_POST['Amount'];
+    $Remark = $_POST['Remark'];
+
+    $query = "INSERT INTO programming_lab2
+        (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
+        VALUES 
+        ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
-    $query = "INSERT INTO toppers (student_name, percentage, class_awarded, department, year) 
-              VALUES ('$name', '$percentage', '$class_awarded', '$department', '$year')";
     if (mysqli_query($conn, $query)) {
-        header("Location: show_Toppers.php?msg=added");
+        header("Location: programming_lab2.php?msg=added");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr"
     data-theme="theme-default" data-assets-path="../assets/"
@@ -40,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <div class="row mt-3">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="Nameo_f_Equipment" required />
+                                            <input type="text" class="form-control" name="Name_of_Equipment" required />
                                             <label>Name of Equipment</label>
                                         </div>
                                     </div>
@@ -123,9 +134,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                     <a href="./programming_lab2.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
-
-
-
                         </div>
                     </div>
                 </div>
