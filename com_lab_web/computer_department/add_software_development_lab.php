@@ -1,25 +1,36 @@
 <?php
- // DB connection
+ $conn = mysqli_connect("localhost", "root", "", "computer");
+
+if (!$conn) {
+    die("Database Connection Failed: " . mysqli_connect_error());
+}
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['student_name'];
-    $percentage = $_POST['percentage'];
-    $class_awarded = $_POST['class_awarded'];
-    $department = $_POST['department'];
-    $year = $_POST['year'];
 
+    $Name_of_Equipment = $_POST['Name_of_Equipment'];
+    $Accession_No = $_POST['Accession_No'];
+    $System_no = $_POST['System_no'];
+    $GRN_no = $_POST['GRN_no'];
+    $Unit_Rate = $_POST['Unit_Rate'];
+    $Quantity = $_POST['Quantity'];
+    $Amount = $_POST['Amount'];
+    $Remark = $_POST['Remark']; 
+     $Configration = $_POST['Configration'];
+    $Maintenance = $_POST['Maintenance'];
+
+    $query = "INSERT INTO software_development_lab
+(Name of Equipment, Accession No, Configuration, Maintenance, System No, GRN no, Unit Rate, Quantity, Amount, Remark)
+VALUES 
+('$Name_of_Equipment', '$Accession_No', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark', '$Configration', '$Maintenance', )";
     
-    $query = "INSERT INTO toppers (student_name, percentage, class_awarded, department, year) 
-              VALUES ('$name', '$percentage', '$class_awarded', '$department', '$year')";
     if (mysqli_query($conn, $query)) {
-        header("Location: show_Toppers.php?msg=added");
+        header("Location: software_development_lab.php?msg=added");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr"
     data-theme="theme-default" data-assets-path="../assets/"
@@ -40,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <div class="row mt-3">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="Nameo_f_Equipment" required />
+                                            <input type="text" class="form-control" name="Name_of_Equipment" required />
                                             <label>Name of Equipment</label>
                                         </div>
                                     </div>
@@ -52,20 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                     </div>
                                 </div>
 
-                                  <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="Configration" required />
-                                            <label>Configration</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-floating mb-3">
-                                            <input type="number" step="0.01" class="form-control" name="Maintenance" required />
-                                            <label>Maintenance</label>
-                                        </div>
-                                    </div>
-                                </div>
+                                  
 
 
                                 <div class="row">
@@ -117,19 +115,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <label>Remark</label>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="Configration" required />
+                                            <label>Configration</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="number" step="0.01" class="form-control" name="Maintenance" required />
+                                            <label>Maintenance</label>
+                                        </div>
+                                    </div>
+                                </div>
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
                                     <a href="./software_development_lab.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
+            
            
 </body>
 
