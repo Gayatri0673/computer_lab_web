@@ -1,5 +1,3 @@
-
-
 <?php
 $conn = mysqli_connect("localhost", "root", "", "computer");
 if (isset($_POST['delete_btn'])) {
@@ -74,7 +72,7 @@ include('../common/header_link.php');
                                     </div>
                                 </div>
                             </div>
-<?php
+                            <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
                             $query = "SELECT * FROM programming_lab2";
                             $project_run = mysqli_query($conn, $query);
@@ -130,10 +128,10 @@ include('../common/header_link.php');
 
 
                                                         <div>
-                                                            <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
-                                                                <button type="button" class="btn rounded-pill btn-success">
-                                                                    <i class="bx bx-show me-1"></i> Show
-                                                                </button>
+                                                            <a href="show.php?lab=programming_lab2&accession_no=<?= $project_row['accession_no']; ?>">
+                                                                <button class="btn rounded-pill btn-success me-1">Show</button>
+                                                            </a>
+
                                                             </a>
                                                             <a href="./edit_programming_lab2.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
                                                                 <button type="button" class="btn rounded-pill btn-primary">
@@ -163,14 +161,14 @@ include('../common/header_link.php');
                                 </div>
                         </div>
 
-                        
-                                        <!-- <?php
-                                                include '../common/dbcon.php';
-                                                $sql = "SELECT event_id,title,description,image FROM event";
-                                                $result = mysqli_query($conn, $sql);
-                                                if (mysqli_num_rows($result) > 0) {
-                                                    while ($row = mysqli_fetch_assoc($result)) {
-                                                        echo "
+
+                        <!-- <?php
+                                include '../common/dbcon.php';
+                                $sql = "SELECT event_id,title,description,image FROM event";
+                                $result = mysqli_query($conn, $sql);
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        echo "
                           <tr>
                             <td><i class=\"fab fa-angular fa-lg text-danger me-3\"></i> <strong>" . htmlspecialchars($row['event_id']) . "</strong></td>
                             <td><p class=\"page-para \">" . htmlspecialchars($row['title']) . "</p></td>
@@ -192,38 +190,38 @@ include('../common/header_link.php');
                         </td>
                         </tr>
                           ";
-                                                    }
-                                                }
-                                                ?>
+                                    }
+                                }
+                                ?>
                        -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!--/ Hoverable Table rows -->
-
-
-                        <hr class="my-5" />
-
-
-                        <!-- Footer -->
-                        <!-- Footer -->
-
-                        <!-- / Footer -->
-
-                        <div class="content-backdrop fade"></div>
+                        </tbody>
+                        </table>
                     </div>
-                    <!-- Content wrapper -->
                 </div>
-                <!-- / Layout page -->
+                <!--/ Hoverable Table rows -->
+
+
+                <hr class="my-5" />
+
+
+                <!-- Footer -->
+                <!-- Footer -->
+
+                <!-- / Footer -->
+
+                <div class="content-backdrop fade"></div>
             </div>
-
-            <!-- Overlay -->
-            <div class="layout-overlay layout-menu-toggle"></div>
+            <!-- Content wrapper -->
         </div>
-        <!-- / Layout wrapper -->
+        <!-- / Layout page -->
+    </div>
 
-        <!-- <div class="buy-now">
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- <div class="buy-now">
       <a
         href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
         target="_blank"
@@ -231,12 +229,12 @@ include('../common/header_link.php');
         >Upgrade to Pro</a
       >
     </div> -->
-        <?php
-        include('../common/footer-link.php');
+    <?php
+    include('../common/footer-link.php');
 
 
-        ?>
-        <!-- Core JS -->
+    ?>
+    <!-- Core JS -->
 
 </body>
 
