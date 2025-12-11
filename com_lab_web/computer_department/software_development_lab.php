@@ -123,10 +123,9 @@ include('../common/header_link.php');
 
 
                                                         <div>
-                                                            <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
-                                                                <button type="button" class="btn rounded-pill btn-success">
-                                                                    <i class="bx bx-show me-1"></i> Show
-                                                                </button>
+                                                            <a href="show.php?lab=software_development_lab&accession_no=<?= $project_row['accession_no']; ?>">
+                                                                <button class="btn rounded-pill btn-success me-1">Show</button>
+                                                            </a>
                                                             </a>
                                                             <a href="./edit_software_development_lab.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
                                                                 <button type="button" class="btn rounded-pill btn-primary">

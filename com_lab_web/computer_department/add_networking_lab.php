@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Accession_No = $_POST['Accession_No'];
     $Configration = $_POST['Configration'];
     $Maintenance = $_POST['Maintenance'];
-    $System_no = $_POST['System_no'];6
+    $System_no = $_POST['System_no'];
     $GRN_no = $_POST['GRN_no'];
     $Unit_Rate = $_POST['Unit_Rate'];
     $Quantity = $_POST['Quantity'];
@@ -19,9 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Remark = $_POST['Remark'];
 
     $query = "INSERT INTO networking_lab
-        (Name_of_Equipment, Accession_No, Configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
+        (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
         ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
+    
     
     if (mysqli_query($conn, $query)) {
         header("Location: networking_lab.php?msg=added");
@@ -66,8 +67,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                   <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="Configration" required />
-                                            <label>Configration</label>
+                                            <input type="text" class="form-control" name="Configuration" required />
+                                            <label>Configuration</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
