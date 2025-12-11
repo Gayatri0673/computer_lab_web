@@ -89,7 +89,7 @@ include('../common/header_link.php');
                                                 <th>Quantity</th>
                                                 <th>Amount</th>
                                                 <th>Remark</th>
-                                                <th>Configration</th>
+                                                <th>Configuration</th>
                                                 <th>Maintenance</th>
                                                 <th class="text-center">Action</th>
 
@@ -103,10 +103,6 @@ include('../common/header_link.php');
                                             ?>
 
                                                 <tr>
-
-
-
-
                                                     <td><?= $sr++; ?></td>
                                                     <td><?php echo $project_row["name_of_equipment"]; ?></td>
                                                     <td><?php echo $project_row["accession_no"]; ?></td>
@@ -119,25 +115,24 @@ include('../common/header_link.php');
                                                     <td><?php echo $project_row["configration"]; ?></td>
                                                     <td><?php echo $project_row["Maintenance"]; ?></td>
                                                     <td>
-
-
-
                                                         <div>
-                                                            <a href="delete_Student-Association.php?id=<?php echo $student_row['id']; ?>">
-                                                                <button type="button" class="btn rounded-pill btn-success">
-                                                                    <i class="bx bx-show me-1"></i> Show
-                                                                </button>
+
+                                                            <a href="show.php?lab=networking_lab&accession_no=<?php echo $project_row['Accession_No']; ?>">
+                                                                <button class="btn rounded-pill btn-success me-1" type="button">Show</button>
                                                             </a>
-                                                            <a href="./edit_networking_lab.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
+
+                                                            <a href="./edit_networking_lab.php?accession_no=<?php echo $project_row['Accession_No']; ?>" class="text-white">
                                                                 <button type="button" class="btn rounded-pill btn-primary">
                                                                     <i class="bx bx-edit-alt me-1"></i> Edit
                                                                 </button>
                                                             </a>
 
                                                             <form action="networking_lab.php" method="POST" class="d-lg-inline">
-                                                                <input type="hidden" name="delete_id" value="<?php echo $project_row['accession_no']; ?>">
+                                                                <input type="hidden" name="delete_id" value="<?php echo $project_row['Accession_No']; ?>">
                                                                 <button type="submit" name="delete_btn" class="btn rounded-pill btn-danger">Delete</button>
                                                             </form>
+
+
                                                         </div>
                                                     </td>
                                                 </tr>
