@@ -104,7 +104,7 @@ include('../common/header_link.php');
 
                                                 <tr>
                                                     <td><?= $sr++; ?></td>
-                                                    <td><?php echo $project_row["name_of_equipment"]; ?></td>
+                                                    <td><?php echo $project_row["name_of_equipm"]; ?></td>
                                                     <td><?php echo $project_row["accession_no"]; ?></td>
                                                     <td><?php echo $project_row["System_no"]; ?></td>
                                                     <td><?php echo $project_row["GRN_no"]; ?></td>
@@ -117,18 +117,18 @@ include('../common/header_link.php');
                                                     <td>
                                                         <div>
 
-                                                            <a href="show.php?lab=networking_lab&accession_no=<?php echo $project_row['Accession_No']; ?>">
+                                                            <a href="show.php?lab=networking_lab&accession_no=<?php echo $project_row['accession_no']; ?>">
                                                                 <button class="btn rounded-pill btn-success me-1" type="button">Show</button>
                                                             </a>
 
-                                                            <a href="./edit_networking_lab.php?accession_no=<?php echo $project_row['Accession_No']; ?>" class="text-white">
+                                                            <a href="./edit_networking_lab.php?accession_no=<?php echo $project_row['accession_no']; ?>" class="text-white">
                                                                 <button type="button" class="btn rounded-pill btn-primary">
                                                                     <i class="bx bx-edit-alt me-1"></i> Edit
                                                                 </button>
                                                             </a>
 
                                                             <form action="networking_lab.php" method="POST" class="d-lg-inline">
-                                                                <input type="hidden" name="delete_id" value="<?php echo $project_row['Accession_No']; ?>">
+                                                                <input type="hidden" name="delete_id" value="<?php echo $project_row['accession_no']; ?>">
                                                                 <button type="submit" name="delete_btn" class="btn rounded-pill btn-danger">Delete</button>
                                                             </form>
 

@@ -108,7 +108,7 @@ include('../common/header_link.php');
 
 
                                                     <td><?= $sr++; ?></td>
-                                                    <td><?php echo $project_row["name_of_equipment"]; ?></td>
+                                                    <td><?php echo $project_row["name_of_equipm"]; ?></td>
                                                     <td><?php echo $project_row["accession_no"]; ?></td>
                                                     <td><?php echo $project_row["System_no"]; ?></td>
                                                     <td><?php echo $project_row["GRN_no"]; ?></td>

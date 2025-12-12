@@ -1,15 +1,15 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "", "computer");
 
-$accession_no = trim($_GET['Accession_No']);
-$project_query = "SELECT * FROM software_development_lab WHERE accession_no ='$Accession_No'";
+$accession_no = trim($_GET['accession_no']);
+$project_query = "SELECT * FROM software_development_lab WHERE accession_no ='$accession_no'";
 $project_query_run = mysqli_query($conn, $project_query);
 
 if (isset($_POST['edit_btn'])) {
     // Correct POST variables
     $update_acc_no = $_POST['update_acc_no'];
-    $Name_of_Equipment = $_POST['Name_of_Equipment'];
-    $accession_no = $_POST['Accession_No'];
+    $name_of_equipm = $_POST['name_of_equipm'];
+    $accession_no = $_POST['accession_no'];
     $Configration = $_POST['Configration'];
     $Maintenance = $_POST['Maintenance'];
     $System_no = $_POST['System_no'];
@@ -21,8 +21,8 @@ if (isset($_POST['edit_btn'])) {
 
     // Correct UPDATE SQL query
     $query_update ="UPDATE software_development_lab SET 
-            name_of_equipment = '$Name_of_Equipment',
-            accession_no = '$Accession_no',
+            name_of_equipm = '$name_of_equipm',
+            accession_no = '$accession_no',
             configration = '$Configration',
             Maintenance = '$Maintenance',
             System_no = '$System_no',
@@ -85,14 +85,14 @@ if (mysqli_num_rows($project_query_run)) {
                                                 <input type="hidden" class="form-control" name="update_acc_no" value="<?php echo $row['accession_no']; ?>" />
 
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" name="Name_of_Equipment" value="<?php echo $row['name_of_equipment']; ?>" />
+                                                    <input type="text" class="form-control" name="name_of_equipm" value="<?php echo $row['name_of_equipm']; ?>" />
                                                     <label>Name of Equipment</label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="form-floating mb-3">
                                                     <input type="number" step="0.01" class="form-control" name="accession_no" value="<?php echo $row['accession_no']; ?>" />
-                                                    <label>Accession No.</label>
+                                                    <label>accession_no</label>
                                                 </div>
                                             </div>
                                         </div>
