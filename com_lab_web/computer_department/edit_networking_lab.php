@@ -65,14 +65,14 @@ if (isset($_POST['update'])) {
                                 <div class="row mt-3">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="Nameo_f_Equipment" required />
+                                            <input type="text" class="form-control" name="name_of_equipm" required />
                                             <label>Name of Equipment</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="number" step="0.01" class="form-control" name="Accession_No" required />
-                                            <label>Accession No.</label>
+                                            <input type="number" step="0.01" class="form-control" name="accession_no" required />
+                                            <label>accession_no</label>
                                         </div>
                                     </div>
                                 </div>

@@ -7,8 +7,8 @@ if (!$conn) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $Name_of_Equipment = $_POST['Name_of_Equipment'];
-    $Accession_No = $_POST['Accession_No'];
+    $name_of_equipm = $_POST['name_of_equipm'];
+    $accession_no = $_POST['accession_no'];
     $Configration = $_POST['Configration'];
     $Maintenance = $_POST['Maintenance'];
     $System_no = $_POST['System_no'];
@@ -18,10 +18,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Amount = $_POST['Amount'];
     $Remark = $_POST['Remark'];
 
-    $query = "INSERT INTO networking_lab
-        (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
+    $query = "INSERT INTO networking_lab 
+        (name_of_equipm, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
-        ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
+        ('$name_of_equipm', '$accession_no', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
     
     if (mysqli_query($conn, $query)) {
@@ -52,14 +52,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <div class="row mt-3">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="Name_of_Equipment" required />
-                                            <label>Name of Equipment</label>
+                                            <input type="text" class="form-control" name="name_of_equipm" required />
+                                            <label>name_of_equipm</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="number" step="0.01" class="form-control" name="Accession_No" required />
-                                            <label>Accession No</label>
+                                            <input type="number" step="0.01" class="form-control" name="accession_no" required />
+                                            <label>accession_no</label>
                                         </div>
                                     </div>
                                 </div>
