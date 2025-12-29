@@ -26,6 +26,7 @@ $row = mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +40,10 @@ $row = mysqli_fetch_assoc($result);
       <div class="row g-0">
 
         <div class="col-md-4">
-          <img src="../assets/img/computer.png" class="img-fluid rounded-start">
+          <img src="/COMPUTER_LAB_WEB/com_lab_web/assets/img/computer.jpeg" 
+            class="img-fluid rounded-start mt-5"
+            alt="Computer">
+
         </div>
 
         <div class="col-md-8">

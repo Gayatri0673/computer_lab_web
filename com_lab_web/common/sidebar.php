@@ -75,6 +75,11 @@ function isMenuOpen($pages)
             <div>Project Lab</div>
           </a>
         </li>
+        <li class="menu-item <?= isActive(['software_development_lab.php']) ?>">
+          <a href="software_development_lab.php" class="menu-link">
+            <div>Software Development Lab</div>
+          </a>
+        </li>
       </ul>
     </li>
   </ul>
