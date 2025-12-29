@@ -8,7 +8,7 @@ $project_query_run = mysqli_query($conn, $project_query);
 if (isset($_POST['edit_btn'])) {
     // Correct POST variables
     $update_acc_no = $_POST['update_acc_no'];
-    $name_of_equipm = $_POST['name_of_equipm'];
+    $name_of_equipment = $_POST['name_of_equipment'];
     $accession_no = $_POST['accession_no'];
     $Configration = $_POST['Configration'];
     $Maintenance = $_POST['Maintenance'];
@@ -21,7 +21,7 @@ if (isset($_POST['edit_btn'])) {
 
     // Correct UPDATE SQL query
     $query_update ="UPDATE software_development_lab SET 
-            name_of_equipm = '$name_of_equipm',
+            name_of_equipment = '$name_of_equipment',
             accession_no = '$accession_no',
             configration = '$Configration',
             Maintenance = '$Maintenance',
@@ -85,7 +85,7 @@ if (mysqli_num_rows($project_query_run)) {
                                                 <input type="hidden" class="form-control" name="update_acc_no" value="<?php echo $row['accession_no']; ?>" />
 
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" name="name_of_equipm" value="<?php echo $row['name_of_equipm']; ?>" />
+                                                    <input type="text" class="form-control" name="name_of_equipment" value="<?php echo $row['name_of_equipment']; ?>" />
                                                     <label>Name of Equipment</label>
                                                 </div>
                                             </div>

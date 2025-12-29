@@ -7,7 +7,7 @@ if (!$conn) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $name_of_equipm = $_POST['name_of_equipm'];
+    $name_of_equipm = $_POST['name_of_equipment'];
     $Accession_No = $_POST['Accession_No'];
     $System_no = $_POST['System_no'];
     $GRN_no = $_POST['GRN_no'];
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Maintenance = $_POST['Maintenance'];
 
      $query = "INSERT INTO software_development_lab 
-        (name_of_equipm, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
+        (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
         ('$name_of_equipm', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <div class="row mt-3">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="name_of_equipm" required />
+                                            <input type="text" class="form-control" name="name_of_equipment" required />
                                             <label>name_of_equipm</label>
                                         </div>
                                     </div>
