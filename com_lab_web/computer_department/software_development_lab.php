@@ -62,6 +62,9 @@ include('../common/header_link.php');
                                     <a href="./add_software_development_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
+                                     <a href="./status.php">
+                                        <button type="button" class="btn btn-primary m-4">Status</button>
+                                    </a>
                                     <div class="text-center">
                                         <button onclick="window.print()" class="btn btn-primary m-4">Print</button>
                                     </div>
