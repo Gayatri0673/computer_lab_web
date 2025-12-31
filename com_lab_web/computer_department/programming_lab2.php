@@ -58,7 +58,7 @@ include('../common/header_link.php');
                         <div class="card">
                             <div class="row">
                                 <div class="col-lg-6 ">
-                                    <h5 class="card-header">Programming Lab 2</h5>
+                                    <h5 class="m-4">Programming Lab 2</h5>
                                 </div>
 
                                 <div class="col-lg-6 d-flex justify-content-end">
@@ -66,6 +66,9 @@ include('../common/header_link.php');
 
                                     <a href="./add_programming_lab2.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
+                                    </a>
+                                     <a href="./status.php">
+                                        <button type="button" class="btn btn-primary m-4">Status</button>
                                     </a>
                                     <div class="text-center">
                                         <button onclick="window.print()" class="btn btn-primary m-4">Print</button>
