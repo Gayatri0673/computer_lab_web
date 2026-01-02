@@ -25,6 +25,30 @@ function isMenuOpen($pages)
 }
 ?>
 
+<script src="../assets/vendor/libs/jquery/jquery.js"></script>
+<script src="../assets/vendor/js/bootstrap.js"></script>
+<script src="../assets/vendor/js/menu.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.menu-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const parent = this.closest('.menu-item');
+      parent.classList.toggle('open');
+    });
+  });
+});
+
+document.querySelectorAll('.menu-sub a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelectorAll('.menu-item.open')
+      .forEach(item => item.classList.remove('open'));
+  });
+});
+</script>
+
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
   <div class="sidebar app-brand demo">
     <a href="index.php" class="app-brand-link">
@@ -49,7 +73,7 @@ function isMenuOpen($pages)
     </li>
 
     <!-- Home Menu -->
-    <li class="menu-item <?= isMenuOpen(['networking_lab.php','programming_lab1.php','programming_lab2.php','project_lab.php']) ?>">
+    <li class="menu-item menu-item active open <?= isMenuOpen(['networking_lab.php','programming_lab1.php','programming_lab2.php','project_lab.php']) ?>">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
         <div data-i18n="Layouts">Computer Department</div>
