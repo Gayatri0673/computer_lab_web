@@ -18,13 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Amount = $_POST['Amount'];
     $Remark = $_POST['Remark'];
 
-    $query = "INSERT INTO project_lab 
+    $query = "INSERT INTO programming_lab2
         (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
         ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
     if (mysqli_query($conn, $query)) {
-        header("Location: project_lab.php?msg=added");
+        header("Location: programming_lab2.php?msg=added");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
@@ -35,14 +35,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr"
     data-theme="theme-default" data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
-<?php include '../common/header_link.php'; ?>
-
+<?php include '../../common/header_link.php'; ?>
+<link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include '../common/sidebar.php'; ?>
+            <?php include '../../common/sidebar_principal.php'; ?>
             <div class="layout-page">
-                <?php include '../common/header.php'; ?>
+                <?php include '../../common/header.php'; ?>
                 <div class="container-p-x">
                     <div class="card my-4">
                         <h5 class="card-header">ADD Details</h5>
@@ -131,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <a href="./project_lab.php" class="btn btn-secondary">Back</a>
+                                    <a href="./programming_lab2.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
                         </div>

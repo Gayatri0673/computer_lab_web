@@ -20,7 +20,7 @@ if (isset($_POST['edit_btn'])) {
     $Remark = $_POST['Remark'];
 
     // Correct UPDATE SQL query
-    $query_update ="UPDATE networking_lab SET 
+    $query_update = "UPDATE networking_lab SET 
             name_of_equipment = '$name_of_equipment',
             accession_no = '$accession_no',
             configration = '$Configration',
@@ -60,18 +60,22 @@ if (mysqli_num_rows($project_query_run)) {
             data-theme="theme-default"
             data-assets-path="../assets/"
             data-template="vertical-menu-template-free">
-        <?php include '../common/header_link.php'; ?>
+        <?php include '../../common/header_link.php'; ?>
+        <link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
+        <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
+        <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
 
         <body>
             <div class="layout-wrapper layout-content-navbar">
                 <div class="layout-container">
                     <!-- Sidebar -->
-                    <?php include '../common/sidebar.php'; ?>
+                    <?php include '../../common/sidebar_principal.php';
+                    ?>
                     <!-- / Sidebar -->
 
                     <div class="layout-page">
                         <!-- Navbar -->
-                        <?php include '../common/header.php'; ?>
+                        <?php include '../../common/header.php'; ?>
                         <!-- / Navbar -->
 
                         <div class="container-p-x">
@@ -178,12 +182,12 @@ if (mysqli_num_rows($project_query_run)) {
                 </div>
             </div>
     <?php
-      }
-    } else {
-        echo "no data found by this accession number";
     }
+} else {
+    echo "no data found by this accession number";
+}
     ?>
         </body>
-     
-            
+
+
         </html>

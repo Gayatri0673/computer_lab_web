@@ -1,5 +1,5 @@
 <?php
- $conn = mysqli_connect("localhost", "root", "", "computer");
+$conn = mysqli_connect("localhost", "root", "", "computer");
 
 if (!$conn) {
     die("Database Connection Failed: " . mysqli_connect_error());
@@ -14,15 +14,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Unit_Rate = $_POST['Unit_Rate'];
     $Quantity = $_POST['Quantity'];
     $Amount = $_POST['Amount'];
-    $Remark = $_POST['Remark']; 
-     $Configration = $_POST['Configration'];
+    $Remark = $_POST['Remark'];
+    $Configration = $_POST['Configration'];
     $Maintenance = $_POST['Maintenance'];
 
-     $query = "INSERT INTO software_development_lab 
+    $query = "INSERT INTO software_development_lab 
         (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
         ('$name_of_equipm', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
-    
+
     if (mysqli_query($conn, $query)) {
         header("Location: software_development_lab.php?msg=added");
         exit;
@@ -35,14 +35,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr"
     data-theme="theme-default" data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
-<?php include '../common/header_link.php'; ?>
+<?php include '../../common/header_link.php'; ?>
+<link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
 
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include '../common/sidebar.php'; ?>
+            <?php include '../../common/sidebar_principal.php';
+            ?>
             <div class="layout-page">
-                <?php include '../common/header.php'; ?>
+                <?php include '../../common/header.php'; ?>
                 <div class="container-p-x">
                     <div class="card my-4">
                         <h5 class="card-header">ADD Details</h5>
@@ -63,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                     </div>
                                 </div>
 
-                                  
+
 
 
                                 <div class="row">
@@ -116,19 +120,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                         </div>
                                     </div>
                                     <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="Configration" required />
-                                            <label>Configration</label>
+                                        <div class="col-lg-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" name="Configration" required />
+                                                <label>Configration</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="number" step="0.01" class="form-control" name="Maintenance" required />
+                                                <label>Maintenance</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-floating mb-3">
-                                            <input type="number" step="0.01" class="form-control" name="Maintenance" required />
-                                            <label>Maintenance</label>
-                                        </div>
-                                    </div>
-                                </div>
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
@@ -139,8 +143,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                 </div>
             </div>
-            
-           
+
+
 </body>
 
 </html>

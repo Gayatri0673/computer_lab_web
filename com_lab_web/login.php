@@ -1,3 +1,80 @@
+<?php
+session_start();
+
+// Connect to database
+$conn = mysqli_connect("localhost", "root", "", "computer");
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $username = trim($_POST['username']);
+    $password = $_POST['password'];
+
+    // Prepare statement to prevent SQL injection
+    $stmt = $conn->prepare("SELECT * FROM register WHERE user_name = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        $user = $result->fetch_assoc();
+
+        // Verify password
+        if (password_verify($password, $user['password'])) {
+            // Store info in session
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['user_name'] = $user['user_name'];
+            $_SESSION['role'] = $user['post'];
+            $_SESSION['branch'] = $user['branch'];
+            $_SESSION['lab'] = $user['lab'];
+
+            // Redirect based on role
+if ($user['post'] === "principal") {
+    header("Location: principal/index.php");
+    exit();
+} elseif ($user['post'] === "hod") {
+    // Map branch to department folder
+    $branch_map = [
+        "computer" => "computer_department",
+        "civil" => "civil_department",
+        "electrical" => "electrical_department",
+        "electronics" => "electronics_department",
+        "mechanical" => "mechanical_department",
+        "ai" => "AI_department"
+    ];
+
+    $branch_lower = strtolower($user['branch']);
+    $folder = $branch_map[$branch_lower] ?? null;
+
+    if ($folder) {
+        header("Location: ./index.php");
+        exit();
+    } else {
+        echo "<script>alert('Branch folder not found');</script>";
+    }
+
+} elseif ($user['post'] === "lab-assistant") {
+    header("Location: lab_assistant/index.php");
+    exit();
+} else {
+    echo "<script>alert('Invalid role');</script>";
+}
+
+        } else {
+            echo "<script>alert('Incorrect password');</script>";
+        }
+
+    } else {
+        echo "<script>alert('Username not found');</script>";
+    }
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
