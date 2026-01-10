@@ -20,7 +20,7 @@
   data-assets-path=".../assets/"
   data-template="vertical-menu-template-free">
 <?php
-include 'common/header_link.php';
+include '../common/header_link.php';
 
 ?>
 
@@ -31,7 +31,7 @@ include 'common/header_link.php';
     <div class="layout-container">
       <!-- Menu -->
       <?php
-      include 'common/sidebar.php';
+        include '../common/sidebar_principal.php';
 
       ?>
       <!-- / Menu -->
@@ -41,7 +41,7 @@ include 'common/header_link.php';
         <!-- Navbar -->
 
         <?php
-        include 'common/header.php';
+        include '../common/header.php';
 
         ?>
 
@@ -696,7 +696,7 @@ include 'common/header_link.php';
       >
     </div> -->
   <?php
-  include '../com_lab_web/common/footer_link.php';
+  include '../../com_lab_web/common/footer_link.php';
 
   ?>
   <!-- Core JS -->

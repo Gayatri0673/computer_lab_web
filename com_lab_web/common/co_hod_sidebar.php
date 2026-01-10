@@ -1,5 +1,4 @@
 <?php
-// Get current file name (e.g., "slider.php")
 $current_page = basename(parse_url($_SERVER['PHP_SELF'], PHP_URL_PATH));
 
 function isActive($pages)
@@ -25,9 +24,9 @@ function isMenuOpen($pages)
 }
 ?>
 
-<script src="../assets/vendor/libs/jquery/jquery.js"></script>
-<script src="../assets/vendor/js/bootstrap.js"></script>
-<script src="../assets/vendor/js/menu.js"></script>
+<script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+<script src="../../assets/vendor/js/bootstrap.js"></script>
+<script src="../../assets/vendor/js/menu.js"></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -51,9 +50,9 @@ document.querySelectorAll('.menu-sub a').forEach(link => {
 
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
   <div class="sidebar app-brand demo">
-    <a href="index.php" class="app-brand-link">
+    <a href="./index.php" class="app-brand-link">
       <span class="app-brand-text demo menu-text fw-bolder ms-2"></span>
-      <img src="../assets/img/logo/logo-csmss.png" class="w-100" alt="csmss-logo">
+      <img src="../../assets/img/logo/logo-csmss.png" class="w-100" alt="csmss-logo">
     </a>
     <a href="javascript:void(0);" 
        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">

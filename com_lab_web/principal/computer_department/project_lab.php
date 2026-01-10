@@ -2,12 +2,12 @@
 $conn = mysqli_connect("localhost", "root", "", "computer");
 if (isset($_POST['delete_btn'])) {
     $delete_id = $_POST['delete_id'];
-    $lab_query = "DELETE FROM networking_lab WHERE accession_no ='$delete_id'";
+    $lab_query = "DELETE FROM project_lab WHERE accession_no ='$delete_id'";
     $lab_query_run = mysqli_query($conn, $lab_query);
     if ($lab_query_run) {
-        header("Location: networking_lab.php");
+        header("Location: project_lab.php");
     } else {
-        header("Location: networking_lab.php");
+        header("Location: project_lab.php");
     }
 }
 
@@ -21,16 +21,18 @@ if (isset($_POST['delete_btn'])) {
     data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
 <?php
-include('../common/header_link.php');
+include('../../common/header_link.php');
 ?>
-
+<link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
             <?php
-            include '../common/sidebar.php';
+        include '../../common/sidebar_principal.php';
             ?>
             <!-- / Menu -->
 
@@ -38,7 +40,7 @@ include('../common/header_link.php');
             <div class="layout-page">
                 <!-- Navbar -->
                 <?php
-                include '../common/header.php';
+                include '../../common/header.php';
                 ?>
                 <!-- / Navbar -->
 
@@ -47,7 +49,7 @@ include('../common/header_link.php');
                     <!-- Content -->
 
                     <div class="container-p-x flex-grow-1 container-p-y">
-                        <h4 class="text-muted fw-bold py-3 mb-4">Networking LAB</h4>
+                        <h4 class="text-muted fw-bold py-3 mb-4">PROJECT LAB</h4>
 
                         <!-- Hoverable Table rows -->
                         <div class="card">
@@ -59,10 +61,10 @@ include('../common/header_link.php');
                                 <div class="col-lg-6 d-flex justify-content-end">
                                     <input type="text" class="form-control border-black m-4 shadow-none" placeholder="Search..." aria-label="Search...">
 
-                                    <a href="./add_networking_lab.php">
+                                    <a href="./add_project_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
-                                    <a href="./networking_lab_status.php">
+                                     <a href="./project_lab_status.php">
                                         <button type="button" class="btn btn-primary m-4">Status</button>
                                     </a>
                                     <div class="text-center">
@@ -72,7 +74,7 @@ include('../common/header_link.php');
                             </div>
                             <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM networking_lab";
+                            $query = "SELECT * FROM project_lab";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {
@@ -92,7 +94,7 @@ include('../common/header_link.php');
                                                 <th>Quantity</th>
                                                 <th>Amount</th>
                                                 <th>Remark</th>
-                                                <th>Configuration</th>
+                                                <th>Configration</th>
                                                 <th>Maintenance</th>
                                                 <th class="text-center">Action</th>
 
@@ -106,6 +108,10 @@ include('../common/header_link.php');
                                             ?>
 
                                                 <tr>
+
+
+
+
                                                     <td><?= $sr++; ?></td>
                                                     <td><?php echo $project_row["name_of_equipment"]; ?></td>
                                                     <td><?php echo $project_row["accession_no"]; ?></td>
@@ -118,24 +124,24 @@ include('../common/header_link.php');
                                                     <td><?php echo $project_row["configration"]; ?></td>
                                                     <td><?php echo $project_row["Maintenance"]; ?></td>
                                                     <td>
+
+
+
                                                         <div>
-
-                                                            <a href="show.php?lab=networking_lab&accession_no=<?php echo $project_row['accession_no']; ?>">
-                                                                <button class="btn rounded-pill btn-success me-1" type="button">Show</button>
+                                                            <a href="show.php?lab=project_lab&accession_no=<?= $project_row['accession_no']; ?>">
+                                                                <button class="btn rounded-pill btn-success me-1">Show</button>
                                                             </a>
-
-                                                            <a href="./edit_networking_lab.php?accession_no=<?php echo $project_row['accession_no']; ?>" class="text-white">
+                                                            </a>
+                                                            <a href="./edit_project_lab.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
                                                                 <button type="button" class="btn rounded-pill btn-primary">
                                                                     <i class="bx bx-edit-alt me-1"></i> Edit
                                                                 </button>
                                                             </a>
 
-                                                            <form action="networking_lab.php" method="POST" class="d-lg-inline">
+                                                            <form action="project_lab.php" method="POST" class="d-lg-inline">
                                                                 <input type="hidden" name="delete_id" value="<?php echo $project_row['accession_no']; ?>">
                                                                 <button type="submit" name="delete_btn" class="btn rounded-pill btn-danger">Delete</button>
                                                             </form>
-
-
                                                         </div>
                                                     </td>
                                                 </tr>

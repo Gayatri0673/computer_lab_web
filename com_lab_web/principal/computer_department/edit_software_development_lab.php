@@ -2,13 +2,13 @@
 $conn = mysqli_connect("localhost", "root", "", "computer");
 
 $accession_no = trim($_GET['accession_no']);
-$project_query = "SELECT * FROM project_lab WHERE accession_no ='$accession_no'";
+$project_query = "SELECT * FROM software_development_lab WHERE accession_no ='$accession_no'";
 $project_query_run = mysqli_query($conn, $project_query);
 
 if (isset($_POST['edit_btn'])) {
     // Correct POST variables
     $update_acc_no = $_POST['update_acc_no'];
-    $Name_of_Equipment = $_POST['Name_of_Equipment'];
+    $name_of_equipment = $_POST['name_of_equipment'];
     $accession_no = $_POST['accession_no'];
     $Configration = $_POST['Configration'];
     $Maintenance = $_POST['Maintenance'];
@@ -20,8 +20,8 @@ if (isset($_POST['edit_btn'])) {
     $Remark = $_POST['Remark'];
 
     // Correct UPDATE SQL query
-    $query_update ="UPDATE project_lab SET 
-            name_of_equipment = '$Name_of_Equipment',
+    $query_update = "UPDATE software_development_lab SET 
+            name_of_equipment = '$name_of_equipment',
             accession_no = '$accession_no',
             configration = '$Configration',
             Maintenance = '$Maintenance',
@@ -37,7 +37,7 @@ if (isset($_POST['edit_btn'])) {
 
     if ($query_update_run) {
         echo 'Data updated';
-        header("Location: project_lab.php");
+        header("Location: software_development_lab.php");
     } else {
         echo 'Data NOT updated: ' . mysqli_error($conn);
     }
@@ -60,18 +60,22 @@ if (mysqli_num_rows($project_query_run)) {
             data-theme="theme-default"
             data-assets-path="../assets/"
             data-template="vertical-menu-template-free">
-        <?php include '../common/header_link.php'; ?>
+        <?php include '../../common/header_link.php'; ?>
+        <link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
+        <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
+        <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
 
         <body>
             <div class="layout-wrapper layout-content-navbar">
                 <div class="layout-container">
                     <!-- Sidebar -->
-                    <?php include '../common/sidebar.php'; ?>
+                    <?php include '../../common/sidebar_principal.php';
+                    ?>
                     <!-- / Sidebar -->
 
                     <div class="layout-page">
                         <!-- Navbar -->
-                        <?php include '../common/header.php'; ?>
+                        <?php include '../../common/header.php'; ?>
                         <!-- / Navbar -->
 
                         <div class="container-p-x">
@@ -79,20 +83,20 @@ if (mysqli_num_rows($project_query_run)) {
                                 <h5 class="card-header">Edit Details</h5>
                                 <div class="card-body">
 
-                                    <form action="edit_project_lab.php" method="POST">
+                                    <form action="edit_software_development_lab.php" method="POST">
                                         <div class="row mt-3">
                                             <div class="col-lg-6">
                                                 <input type="hidden" class="form-control" name="update_acc_no" value="<?php echo $row['accession_no']; ?>" />
 
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" name="Name_of_Equipment" value="<?php echo $row['name_of_equipment']; ?>" />
+                                                    <input type="text" class="form-control" name="name_of_equipment" value="<?php echo $row['name_of_equipment']; ?>" />
                                                     <label>Name of Equipment</label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="form-floating mb-3">
                                                     <input type="number" step="0.01" class="form-control" name="accession_no" value="<?php echo $row['accession_no']; ?>" />
-                                                    <label>Accession No.</label>
+                                                    <label>accession_no</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -165,7 +169,7 @@ if (mysqli_num_rows($project_query_run)) {
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" name="edit_btn" class="btn btn-primary">Edit</button>
-                                            <a href="./project_lab.php" class="btn btn-secondary">Back</a>
+                                            <a href="./software_development_lab.php" class="btn btn-secondary">Back</a>
                                         </div>
                                     </form>
 
@@ -178,12 +182,12 @@ if (mysqli_num_rows($project_query_run)) {
                 </div>
             </div>
     <?php
-      }
-    } else {
-        echo "no data found by this accession number";
     }
+} else {
+    echo "no data found by this accession number";
+}
     ?>
         </body>
-     
-            
+
+
         </html>

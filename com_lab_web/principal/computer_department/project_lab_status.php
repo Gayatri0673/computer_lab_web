@@ -28,7 +28,7 @@ if (isset($_POST['save_status'])) {
 
     // Update the database row
     $update_query = "
-INSERT INTO programming2_lab_status
+INSERT INTO project_lab_status
 (`Sr.No`, cpu, smps, monitor, keyboard, mouse, hard_disk, ram, brand_pc, remark)
 VALUES
 ('$id', '$cpu', '$smps', '$monitor', '$keyboard', '$mouse', '$hard_disk', '$ram', '$brand_pc', '$remark')
@@ -47,9 +47,9 @@ remark='$remark'
     $run_update = mysqli_query($conn, $update_query);
 
     if ($run_update) {
-        echo "<script>window.location='programming2_lab_status.php';</script>";
+        echo "<script>window.location='project_lab_status.php';</script>";
     } else {
-        echo "<script>window.location='programming2_lab_status.php';</script>";
+        echo "<script>window.location='project_lab_status.php';</script>";
     }
 }
 ?>
@@ -63,16 +63,18 @@ remark='$remark'
     data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
 <?php
-include('../common/header_link.php');
+include('../../common/header_link.php');
 ?>
-
+<link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
             <?php
-            include '../common/sidebar.php';
+        include '../../common/sidebar_principal.php';
             ?>
             <!-- / Menu -->
 
@@ -80,7 +82,7 @@ include('../common/header_link.php');
             <div class="layout-page">
                 <!-- Navbar -->
                 <?php
-                include '../common/header.php';
+                include '../../common/header.php';
                 ?>
                 <!-- / Navbar -->
 
@@ -106,7 +108,7 @@ include('../common/header_link.php');
                             </div>
                             <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM programming_lab2";
+                            $query = "SELECT * FROM project_lab";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {
@@ -135,8 +137,8 @@ include('../common/header_link.php');
     SELECT nl.`sr.no.` AS sr_no,
            s.cpu,s.smps,s.monitor,s.keyboard,s.mouse,
            s.hard_disk, s.ram, s.brand_pc, s.remark
-    FROM programming_lab2 nl
-    LEFT JOIN programming2_lab_status s ON nl.`sr.no.`= s.`sr.no.`
+    FROM project_lab nl
+    LEFT JOIN project_lab_status s ON nl.`sr.no.`= s.`sr.no.`
 ");
                                                 if (mysqli_num_rows($query_run) > 0):
                                                     while ($row = mysqli_fetch_assoc($query_run)):
