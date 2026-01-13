@@ -21,11 +21,8 @@ if (isset($_POST['delete_btn'])) {
     data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
 <?php
-include('../../common/header_link.php');
+include('../common/header_link.php');
 ?>
-<link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
-<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
-<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
 
 <body>
     <!-- Layout wrapper -->
@@ -33,7 +30,7 @@ include('../../common/header_link.php');
         <div class="layout-container">
             <!-- Menu -->
             <?php
-        include '../../common/sidebar_principal.php';
+             include '../common/co_hod_sidebar.php';
             ?>
             <!-- / Menu -->
 
@@ -41,7 +38,7 @@ include('../../common/header_link.php');
             <div class="layout-page">
                 <!-- Navbar -->
                 <?php
-                include '../../common/header.php';
+                include '../common/header.php';
                 ?>
                 <!-- / Navbar -->
 

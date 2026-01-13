@@ -74,10 +74,10 @@ function isMenuOpen($pages)
 
   <ul class="menu-inner py-1">
     <!-- Dashboard -->
-    <li class="menu-item active <?= isActive(['index.php']) ?>">
-      <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/index.php" class="app-brand-link">
+    <li class="menu-item <?= isActive(['index.php']) ?>">
+      <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/index.php" class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
-        <div data-i18n="Layouts">Dashboard</div>
+        <div data-i18n="Analytics">Dashboard</div>
       </a>
     </li>
 
