@@ -52,7 +52,7 @@ document.querySelectorAll('.menu-sub a').forEach(link => {
   <div class="sidebar app-brand demo">
     <a href="./index.php" class="app-brand-link">
       <span class="app-brand-text demo menu-text fw-bolder ms-2"></span>
-      <img src="../../assets/img/logo/logo-csmss.png" class="w-100" alt="csmss-logo">
+      <img src="../assets/img/logo/logo-csmss.png" class="w-100" alt="csmss-logo">
     </a>
     <a href="javascript:void(0);" 
        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -61,11 +61,13 @@ document.querySelectorAll('.menu-sub a').forEach(link => {
   </div>
 
   <div class="menu-inner-shadow"></div>
-
+<?php
+  define('BASE_URL', '/');
+  ?>
   <ul class="menu-inner py-1">
     <!-- Dashboard -->
     <li class="menu-item <?= isActive(['index.php']) ?>">
-      <a href="../index.php" class="menu-link">
+      <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/computer_department/index.php"  class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div data-i18n="Analytics">Dashboard</div>
       </a>

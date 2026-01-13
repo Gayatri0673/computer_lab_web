@@ -46,12 +46,13 @@ if ($user['post'] === "principal") {
         "ai" => "AI_department"
     ];
 
-    $branch_lower = strtolower($user['branch']);
+    $branch_lower = strtolower(trim($user['branch']));
     $folder = $branch_map[$branch_lower] ?? null;
 
     if ($folder) {
-        header("Location: ./index.php");
+        header("Location: $folder/index.php");
         exit();
+
     } else {
         echo "<script>alert('Branch folder not found');</script>";
     }
