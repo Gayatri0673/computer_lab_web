@@ -1,13 +1,13 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "computer");
+$conn = mysqli_connect("localhost", "root", "", "artificial_intelligence_&_ml_lab");
 if (isset($_POST['delete_btn'])) {
     $delete_id = $_POST['delete_id'];
-    $lab_query = "DELETE FROM programming_lab1 WHERE accession_no ='$delete_id'";
+    $lab_query = "DELETE FROM AN-01_programming_lab WHERE accession_no ='$delete_id'";
     $lab_query_run = mysqli_query($conn, $lab_query);
     if ($lab_query_run) {
-        header("Location: programming_lab1.php");
+        header("Location: AN-01_programming_lab.php");
     } else {
-        header("Location: programming_lab1.php");
+        header("Location: AN-01_programming_lab.php");
     }
 }
 
@@ -49,7 +49,7 @@ include('../common/header_link.php');
                     <!-- Content -->
 
                     <div class="container-p-x flex-grow-1 container-p-y">
-                        <h4 class="text-muted fw-bold py-3 mb-4">COMPUTER CENTER</h4>
+                        <h4 class="text-muted fw-bold py-3 mb-4">ARTIFICIAL INTELLIGENCE & ML LABS</h4>
 
 
 
@@ -58,13 +58,13 @@ include('../common/header_link.php');
                         <div class="card">
                             <div class="row">
                                 <div class="col-lg-6 ">
-                                    <h5 class="m-4">Programming Lab 1</h5>
+                                    <h5 class="m-4">AN-01_programming_lab</h5>
                                 </div>
 
                                 <div class="col-lg-6 d-flex justify-content-end">
                                     <input type="text" class="form-control border-black m-4 shadow-none" placeholder="Search..." aria-label="Search...">
 
-                                    <a href="./add_programming_lab1.php">
+                                    <a href="./add_AN-01_programming_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
                                      <a href="./programming1_lab_status.php">
@@ -76,8 +76,8 @@ include('../common/header_link.php');
                                 </div>
                             </div>
 <?php
-                            $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM programming_lab1";
+                            $conn = mysqli_connect("localhost", "root", "", "artificial_intelligence_&_ml_lab");
+                            $query = "SELECT * FROM AN-01_programming_lab";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {
@@ -135,13 +135,13 @@ include('../common/header_link.php');
                                                                 <button class="btn rounded-pill btn-success me-1">Show</button>
                                                             </a>
                                                             </a>
-                                                            <a href="./edit_programming_lab1.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
+                                                            <a href="./edit_AN-01_programming_lab.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
                                                                 <button type="button" class="btn rounded-pill btn-primary">
                                                                     <i class="bx bx-edit-alt me-1"></i> Edit
                                                                 </button>
                                                             </a>
 
-                                                            <form action="programming_lab1.php" method="POST" class="d-lg-inline">
+                                                            <form action="AN-01_programming_lab.php" method="POST" class="d-lg-inline">
                                                                 <input type="hidden" name="delete_id" value="<?php echo $project_row['accession_no']; ?>">
                                                                 <button type="submit" name="delete_btn" class="btn rounded-pill btn-danger">Delete</button>
                                                             </form>
@@ -181,7 +181,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -214,7 +214,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -246,7 +246,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -278,7 +278,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -310,7 +310,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -342,7 +342,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -374,7 +374,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -406,7 +406,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -438,7 +438,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -471,7 +471,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -505,7 +505,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -539,7 +539,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -573,7 +573,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -607,7 +607,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -641,7 +641,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -675,7 +675,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -709,7 +709,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -743,7 +743,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -777,7 +777,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -811,7 +811,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -845,7 +845,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -879,7 +879,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -913,7 +913,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -947,7 +947,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -981,7 +981,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1015,7 +1015,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1049,7 +1049,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1083,7 +1083,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1117,7 +1117,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1151,7 +1151,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1185,7 +1185,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1219,7 +1219,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1253,7 +1253,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1287,7 +1287,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1321,7 +1321,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1355,7 +1355,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1389,7 +1389,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1423,7 +1423,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1457,7 +1457,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1491,7 +1491,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1525,7 +1525,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1560,7 +1560,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1594,7 +1594,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1628,7 +1628,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1662,7 +1662,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1696,7 +1696,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1730,7 +1730,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1764,7 +1764,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1798,7 +1798,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1832,7 +1832,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1866,7 +1866,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1900,7 +1900,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1934,7 +1934,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -1968,7 +1968,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2002,7 +2002,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2036,7 +2036,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2070,7 +2070,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2104,7 +2104,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2138,7 +2138,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2172,7 +2172,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2206,7 +2206,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>
@@ -2240,7 +2240,7 @@ include('../common/header_link.php');
                                                         <i class="bx bx-show me-1"></i> Show
                                                     </button>
                                                 </a>
-                                                <a href="./edit_programming_lab1.php" class="text-white">
+                                                <a href="./edit_AN-01_programming_lab.php" class="text-white">
                                                     <button type="button" class="btn rounded-pill btn-primary">
                                                         <i class="bx bx-edit-alt me-1"></i> Edit
                                                     </button>

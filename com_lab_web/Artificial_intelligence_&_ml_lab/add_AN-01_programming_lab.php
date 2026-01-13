@@ -1,5 +1,5 @@
 <?php
- $conn = mysqli_connect("localhost", "root", "", "computer");
+ $conn = mysqli_connect("localhost", "root", "", "artificial_intelligence_&_ml_lab");
 
 if (!$conn) {
     die("Database Connection Failed: " . mysqli_connect_error());
@@ -7,9 +7,9 @@ if (!$conn) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $name_of_equipment = $_POST['name_of_equipment'];
-    $accession_no = $_POST['accession_no'];
-    $Configuration = $_POST['Configuration'];
+    $Name_of_Equipment = $_POST['Name_of_Equipment'];
+    $Accession_No = $_POST['Accession_No'];
+    $Configration = $_POST['Configration'];
     $Maintenance = $_POST['Maintenance'];
     $System_no = $_POST['System_no'];
     $GRN_no = $_POST['GRN_no'];
@@ -18,14 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Amount = $_POST['Amount'];
     $Remark = $_POST['Remark'];
 
-    $query = "INSERT INTO networking_lab 
-        (name_of_equipment, accession_no, configuration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
+    $query = "INSERT INTO AN-01_programming_lab
+        (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
-        ('$name_of_equipment', '$accession_no', '$Configuration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
-    
+        ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
     if (mysqli_query($conn, $query)) {
-        header("Location: networking_lab.php?msg=added");
+        header("Location: AN-01_programming_lab.php?msg=added");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
@@ -52,14 +51,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <div class="row mt-3">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="name_of_equipment" required />
-                                            <label>name_of_equipment</label>
+                                            <input type="text" class="form-control" name="Name_of_Equipment" required />
+                                            <label>Name of Equipment</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="number" step="0.01" class="form-control" name="accession_no" required />
-                                            <label>accession_no</label>
+                                            <input type="number" step="0.01" class="form-control" name="Accession_No" required />
+                                            <label>Accession No.</label>
                                         </div>
                                     </div>
                                 </div>
@@ -67,8 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                   <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" name="Configuration" required />
-                                            <label>Configuration</label>
+                                            <input type="text" class="form-control" name="Configration" required />
+                                            <label>Configration</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -132,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <a href="./networking_lab.php" class="btn btn-secondary">Back</a>
+                                    <a href="./AN-01_programming_lab.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
                         </div>

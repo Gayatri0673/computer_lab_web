@@ -10,7 +10,7 @@ if (isset($_POST['edit_btn'])) {
     $update_acc_no = $_POST['update_acc_no'];
     $name_of_equipment = $_POST['name_of_equipment'];
     $accession_no = $_POST['accession_no'];
-    $Configration = $_POST['Configration'];
+    $Configuration = $_POST['Configuration'];
     $Maintenance = $_POST['Maintenance'];
     $System_no = $_POST['System_no'];
     $GRN_no = $_POST['GRN_no'];
@@ -23,7 +23,7 @@ if (isset($_POST['edit_btn'])) {
     $query_update ="UPDATE networking_lab SET 
             name_of_equipment = '$name_of_equipment',
             accession_no = '$accession_no',
-            configration = '$Configration',
+            configuration = '$Configuration',
             Maintenance = '$Maintenance',
             System_no = '$System_no',
             GRN_no = '$GRN_no',
@@ -101,8 +101,8 @@ if (mysqli_num_rows($project_query_run)) {
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" name="Configration" value="<?php echo $row['configration']; ?>" />
-                                                    <label>Configration</label>
+                                                    <input type="text" class="form-control" name="Configuration" value="<?php echo $row['configuration']; ?>" />
+                                                    <label>Configuration</label>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
@@ -112,6 +112,7 @@ if (mysqli_num_rows($project_query_run)) {
                                                 </div>
                                             </div>
                                         </div>
+
 
                                         <div class="row">
                                             <div class="col-lg-4">

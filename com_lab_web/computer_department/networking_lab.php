@@ -115,7 +115,7 @@ include('../common/header_link.php');
                                                     <td><?php echo $project_row["Quantity"]; ?></td>
                                                     <td><?php echo $project_row["Amount"]; ?></td>
                                                     <td><?php echo $project_row["Remark"]; ?></td>
-                                                    <td><?php echo $project_row["configration"]; ?></td>
+                                                    <td><?php echo $project_row["configuration"]; ?></td>
                                                     <td><?php echo $project_row["Maintenance"]; ?></td>
                                                     <td>
                                                         <div>
@@ -177,4 +177,3 @@ include('../common/header_link.php');
 </body>
 
 </html>
-<!DOCTYPE html>
