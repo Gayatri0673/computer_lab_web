@@ -73,6 +73,7 @@ if (mysqli_num_rows($project_query_run)) {
                     ?>
                     <!-- / Sidebar -->
 
+                    
                     <div class="layout-page">
                         <!-- Navbar -->
                         <?php include '../../common/header.php'; ?>
