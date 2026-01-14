@@ -71,7 +71,7 @@ include('../common/header_link.php');
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-           <?php include '../common/co_hod_sidebar.php';?>
+           <?php include '../common/AI_hod_sidebar.php';?>
             <!-- / Menu -->
 
             <!-- Layout container -->
@@ -87,7 +87,7 @@ include('../common/header_link.php');
                     <!-- Content -->
 
                     <div class="container-p-x flex-grow-1 container-p-y">
-                        <h4 class="text-muted fw-bold py-3 mb-4">Networking LAB</h4>
+                        <h4 class="text-muted fw-bold py-3 mb-4">Programming Lab1</h4>
 
                         <!-- Hoverable Table rows -->
                         <div class="card">
@@ -133,7 +133,7 @@ include('../common/header_link.php');
     SELECT nl.`sr.no.` AS sr_no,
            s.cpu,s.smps,s.monitor,s.keyboard,s.mouse,
            s.hard_disk, s.ram, s.brand_pc, s.remark
-    FROM project_lab nl
+    FROM AN_programming_lab1 nl
     LEFT JOIN an_programming_lab1_status s ON nl.`sr.no.`= s.`sr.no.`
 ");
                                                 if (mysqli_num_rows($query_run) > 0):

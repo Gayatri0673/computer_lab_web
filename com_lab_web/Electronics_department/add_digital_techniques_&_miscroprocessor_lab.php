@@ -18,13 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Amount = $_POST['Amount'];
     $Remark = $_POST['Remark'];
 
-    $query = "INSERT INTO an_programming_lab2
+    $query = "INSERT INTO digital_techniques_&_microprocessor_lab
         (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
         ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
     if (mysqli_query($conn, $query)) {
-        header("Location: AN_programming_lab2.php?msg=added");
+        header("Location: Digital_techniques_&_microprocessor_lab.php?msg=added");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <a href="./AN_programming_lab2.php" class="btn btn-secondary">Back</a>
+                                    <a href="./Digital_techniques_&_microprocessor_lab.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
                         </div>

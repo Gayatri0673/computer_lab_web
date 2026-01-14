@@ -2,12 +2,12 @@
 $conn = mysqli_connect("localhost", "root", "", "computer");
 if (isset($_POST['delete_btn'])) {
     $delete_id = $_POST['delete_id'];
-    $lab_query = "DELETE FROM an_programming_lab1 WHERE accession_no ='$delete_id'";
+    $lab_query = "DELETE FROM digital_techniques_&_miscroprocessor_lab WHERE accession_no ='$delete_id'";
     $lab_query_run = mysqli_query($conn, $lab_query);
     if ($lab_query_run) {
-        header("Location: an_programming_lab1.php");
+        header("Location: Digital_techniques_&_miscroprocessor_lab.php");
     } else {
-        header("Location: an_programming_lab1.php");
+        header("Location: Digital_techniques_&_miscroprocessor_lab");
     }
 }
 ?>
@@ -52,10 +52,10 @@ include('../common/header_link.php');
                                 <div class="col-lg-6 d-flex justify-content-end">
                                     <input type="text" class="form-control border-black m-4 shadow-none" placeholder="Search..." aria-label="Search...">
 
-                                    <a href="./add_an_programming_lab1.php">
+                                    <a href="./add_digital_techniques_&_miscroprocessor_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
-                                     <a href="./an_programming_lab1_status.php">
+                                     <a href="./digital_techniques_&_miscroprocessor_lab_status.php">
                                         <button type="button" class="btn btn-primary m-4">Status</button>
                                     </a>
                                     <div class="text-center">
@@ -65,7 +65,7 @@ include('../common/header_link.php');
                             </div>
                             <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM an_programming_lab1";
+                            $query = "SELECT * FROM digital_techniques_&_miscroprocessor_lab";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {
@@ -110,13 +110,13 @@ include('../common/header_link.php');
                                                                 <button class="btn rounded-pill btn-success me-1">Show</button>
                                                             </a>
                                                             </a>
-                                                            <a href="./edit_an_programming_lab1.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
+                                                            <a href="./edit_digital_techniques_&_miscroprocessor_lab.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
                                                                 <button type="button" class="btn rounded-pill btn-primary">
                                                                     <i class="bx bx-edit-alt me-1"></i> Edit
                                                                 </button>
                                                             </a>
 
-                                                            <form action="an_programming_lab1.php" method="POST" class="d-lg-inline">
+                                                            <form action="digital_techniques_&_miscroprocessor_lab" method="POST" class="d-lg-inline">
                                                                 <input type="hidden" name="delete_id" value="<?php echo $project_row['accession_no']; ?>">
                                                                 <button type="submit" name="delete_btn" class="btn rounded-pill btn-danger">Delete</button>
                                                             </form>
