@@ -74,30 +74,30 @@ document.querySelectorAll('.menu-sub a').forEach(link => {
     </li>
 
     <!-- Home Menu -->
-    <li class="menu-item menu-item active open <?= isMenuOpen(['networking_lab.php','programming_lab1.php','programming_lab2.php','project_lab.php']) ?>">
+    <li class="menu-item menu-item active open <?= isMenuOpen(['AN_programming_lab1','AN_programming_lab2','AN_software_development_lab','AN_adavance_programming_lab']) ?>">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
         <div data-i18n="Layouts">Artificial Intelligence department</div>
       </a>
       <ul class="menu-sub">
-        <li class="menu-item <?= isActive(['networking_lab.php']) ?>">
-          <a href="networking_lab.php" class="menu-link">
-            <div>AN-01 Lab</div>
+        <li class="menu-item <?= isActive(['AN_programming_lab1.php']) ?>">
+          <a href="AN_programming_lab1.php" class="menu-link">
+            <div>programming lab1</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['programming_lab1.php']) ?>">
-          <a href="programming_lab1.php" class="menu-link">
-            <div>AN-02 Lab</div>
+        <li class="menu-item <?= isActive(['AN_programming_lab2.php']) ?>">
+          <a href="AN_programming_lab2.php" class="menu-link">
+            <div>Programming Lab2</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['programming_lab2.php']) ?>">
-          <a href="programming_lab2.php" class="menu-link">
-            <div>AN-03 Lab</div>
+        <li class="menu-item <?= isActive(['AN_software_development_lab.php']) ?>">
+          <a href="AN_software_development_lab.php" class="menu-link">
+            <div>Software Development Lab</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['project_lab.php']) ?>">
-          <a href="project_lab.php" class="menu-link">
-            <div>AN-04 Lab</div>
+        <li class="menu-item <?= isActive(['AN_adavance_programming_lab.php']) ?>">
+          <a href="AN_adavance_programming_lab.php" class="menu-link">
+            <div>Adavance Programming Lab</div>
           </a>
         </li>
       </ul>

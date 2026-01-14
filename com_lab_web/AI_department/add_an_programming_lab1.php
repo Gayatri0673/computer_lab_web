@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <a href="./AN_programming_lab1" class="btn btn-secondary">Back</a>
+                                    <a href="./AN_programming_lab1.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
                         </div>
