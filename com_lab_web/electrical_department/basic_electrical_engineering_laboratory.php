@@ -119,9 +119,6 @@ include('../common/header_link.php');
                                                     <td><?php echo $project_row["configration"]; ?></td>
                                                     <td><?php echo $project_row["maintenance"]; ?></td>
                                                     <td>
-
-
-
                                                         <div>
                                                             <a href="show.php?lab=basic_electrical_engineering_laboratory&accession_no=<?= $project_row['accession_no']; ?>">
                                                                 <button class="btn rounded-pill btn-success me-1">Show</button>
