@@ -124,32 +124,27 @@ function isMenuOpen($pages)
     <li class="menu-item menu-item active">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
-        <div data-i18n="Layouts">AI Department</div>
+        <div data-i18n="Layouts">Artificial Intelligence department</div>
       </a>
       <ul class="menu-sub">
-        <li class="menu-item <?= isActive(['networking_lab.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>Networking Lab</div>
+        <li class="menu-item <?= isActive(['AN-01_lab.php']) ?>">
+          <a href="AN-01_lab.php" class="menu-link">
+            <div>AN-01 Lab</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['programming_lab1.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>Programming Lab1</div>
+        <li class="menu-item <?= isActive(['AN-02_lab.php']) ?>">
+          <a href="AN-02_lab.php" class="menu-link">
+            <div>AN-02 Lab</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['programming_lab2.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>Programming Lab2</div>
+        <li class="menu-item <?= isActive(['AN-03_lab.php']) ?>">
+          <a href="AN-03_lab.php" class="menu-link">
+            <div>AN-03 Lab</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['project_lab.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>Project Lab</div>
-          </a>
-        </li>
-        <li class="menu-item <?= isActive(['software_development_lab.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>Software Development Lab</div>
+        <li class="menu-item <?= isActive(['AN-04_lab.php']) ?>">
+          <a href="AN-04_lab.php" class="menu-link">
+            <div>AN-04 Lab</div>
           </a>
         </li>
       </ul>
@@ -164,27 +159,27 @@ function isMenuOpen($pages)
       <ul class="menu-sub">
         <li class="menu-item <?= isActive(['networking_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Networking Lab</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['programming_lab1.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Programming Lab1</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['programming_lab2.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Programming Lab2</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['project_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Project Lab</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['software_development_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Software Development Lab</div>
+            <div>#</div>
           </a>
         </li>
       </ul>
@@ -199,27 +194,27 @@ function isMenuOpen($pages)
       <ul class="menu-sub">
         <li class="menu-item <?= isActive(['networking_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Networking Lab</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['programming_lab1.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Programming Lab1</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['programming_lab2.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Programming Lab2</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['project_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Project Lab</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['software_development_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Software Development Lab</div>
+            <div>#</div>
           </a>
         </li>
       </ul>
@@ -235,27 +230,27 @@ function isMenuOpen($pages)
       <ul class="menu-sub">
         <li class="menu-item <?= isActive(['networking_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Networking Lab</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['programming_lab1.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Programming Lab1</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['programming_lab2.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Programming Lab2</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['project_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Project Lab</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['software_development_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Software Development Lab</div>
+            <div>#</div>
           </a>
         </li>
       </ul>
@@ -270,27 +265,27 @@ function isMenuOpen($pages)
       <ul class="menu-sub">
         <li class="menu-item <?= isActive(['networking_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Networking Lab</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['programming_lab1.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Programming Lab1</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['programming_lab2.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Programming Lab2</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['project_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Project Lab</div>
+            <div>#</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['software_development_lab.php']) ?>">
           <a href="#" class="menu-link">
-            <div>Software Development Lab</div>
+            <div>#</div>
           </a>
         </li>
       </ul>
