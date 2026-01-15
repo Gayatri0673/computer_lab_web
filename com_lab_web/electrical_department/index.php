@@ -26,9 +26,7 @@ include '../common/header_link.php';
   <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
       <!-- Menu -->
-      <?php
-        include '../common/AI_hod_sidebar.php';
-      ?>
+     <?php include '../common/co_electrical_sidebar.php';?>
       <!-- / Menu -->
       <!-- Layout container -->
       <div class="layout-page">

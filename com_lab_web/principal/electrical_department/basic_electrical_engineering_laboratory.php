@@ -2,15 +2,15 @@
 $conn = mysqli_connect("localhost", "root", "", "computer");
 if (isset($_POST['delete_btn'])) {
     $delete_id = $_POST['delete_id'];
-    $lab_query = "DELETE FROM power_electronics_laboratory
-     WHERE accession_no ='$delete_id'";
+    $lab_query = "DELETE FROM basic_electrical_engineering_laboratory WHERE accession_no ='$delete_id'";
     $lab_query_run = mysqli_query($conn, $lab_query);
     if ($lab_query_run) {
-        header("Location: power_electronics_laboratory.php");
+        header("Location: basic_electrical_engineering_laboratory.php");
     } else {
-        header("Location: power_electronics_laboratory.php");
+        header("Location: basic_electrical_engineering_laboratory.php");
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html
@@ -21,22 +21,24 @@ if (isset($_POST['delete_btn'])) {
     data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
 <?php
-include('../common/header_link.php');
+include('../../common/header_link.php');
 ?>
 
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <!-- Menu -->
-         <?php include '../common/co_electrical_sidebar.php';?>
-            <!-- / Menu -->
+           <!-- Menu -->
+        <?php
+        include '../../common/sidebar_principal.php';
+        ?>
+        <!-- / Menu -->
 
             <!-- Layout container -->
             <div class="layout-page">
                 <!-- Navbar -->
                 <?php
-                include '../common/header.php';
+                include '../../common/header.php';
                 ?>
                 <!-- / Navbar -->
                 <!-- Content wrapper -->
@@ -54,10 +56,10 @@ include('../common/header_link.php');
                                 <div class="col-lg-6 d-flex justify-content-end">
                                     <input type="text" class="form-control border-black m-4 shadow-none" placeholder="Search..." aria-label="Search...">
 
-                                    <a href="./add_power_electronics_laboratory.php">
+                                    <a href="./add_basic_electrical_engineering_laboratory.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
-                                     <a href="./power_electronics_laboratory_status.php">
+                                     <a href="./basic_electrical_engineering_laboratory_status.php">
                                         <button type="button" class="btn btn-primary m-4">Status</button>
                                     </a>
                                     <div class="text-center">
@@ -67,8 +69,7 @@ include('../common/header_link.php');
                             </div>
                             <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM power_electronics_laboratory
-                            ";
+                            $query = "SELECT * FROM basic_electrical_engineering_laboratory";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {
@@ -118,21 +119,18 @@ include('../common/header_link.php');
                                                     <td><?php echo $project_row["configration"]; ?></td>
                                                     <td><?php echo $project_row["maintenance"]; ?></td>
                                                     <td>
-
-
-
                                                         <div>
-                                                            <a href="electrical_show.php?lab=power_electronics_laboratory&accession_no=<?= $project_row['accession_no']; ?>">
+                                                            <a href="show.php?lab=basic_electrical_engineering_laboratory&accession_no=<?= $project_row['accession_no']; ?>">
                                                                 <button class="btn rounded-pill btn-success me-1">Show</button>
                                                             </a>
                                                             </a>
-                                                            <a href="./edit_power_electronics_laboratory.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
+                                                            <a href="./edit_basic_electrical_engineering_laboratory.php?accession_no=<?php echo $project_row["accession_no"]; ?>" class="text-white">
                                                                 <button type="button" class="btn rounded-pill btn-primary">
                                                                     <i class="bx bx-edit-alt me-1"></i> Edit
                                                                 </button>
                                                             </a>
 
-                                                            <form action="power_electronics_laboratory.php" method="POST" class="d-lg-inline">
+                                                            <form action="basic_electrical_engineering_laboratory.php" method="POST" class="d-lg-inline">
                                                                 <input type="hidden" name="delete_id" value="<?php echo $project_row['accession_no']; ?>">
                                                                 <button type="submit" name="delete_btn" class="btn rounded-pill btn-danger">Delete</button>
                                                             </form>

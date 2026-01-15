@@ -50,13 +50,13 @@ $row = mysqli_fetch_assoc($result);
             <ul class="list-group mb-3">
               <li class="list-group-item"><strong>Name:</strong> <?= $row['name_of_equipment']; ?></li>
               <li class="list-group-item"><strong>Accession No:</strong> <?= $row['accession_no']; ?></li>
-              <li class="list-group-item"><strong>System No:</strong> <?= $row['system_no']; ?></li>
+              <li class="list-group-item"><strong>System No:</strong> <?= $row['System_no']; ?></li>
               <li class="list-group-item"><strong>GRN No:</strong> <?= $row['GRN_no']; ?></li>
               <li class="list-group-item"><strong>Unit Rate:</strong> <?= $row['Unit_Rate']; ?></li>
               <li class="list-group-item"><strong>Quantity:</strong> <?= $row['Quantity']; ?></li>
               <li class="list-group-item"><strong>Amount:</strong> <?= $row['Amount']; ?></li>
               <li class="list-group-item"><strong>Configuration:</strong> <?= $row['configration']; ?></li>
-              <li class="list-group-item"><strong>Maintenance:</strong> <?= $row['maintenance']; ?></li>
+              <li class="list-group-item"><strong>Maintenance:</strong> <?= $row['Maintenance']; ?></li>
               <li class="list-group-item"><strong>Remarks:</strong> <?= $row['Remark']; ?></li>
             </ul>
 

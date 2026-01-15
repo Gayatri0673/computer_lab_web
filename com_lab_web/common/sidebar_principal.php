@@ -151,35 +151,20 @@ function isMenuOpen($pages)
     </li>
 
     <!-- Electrical  department -->
-    <li class="menu-item menu-item active">
+    <li class="menu-item menu-item active ">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
         <div data-i18n="Layouts">Electrical Department</div>
       </a>
       <ul class="menu-sub">
-        <li class="menu-item <?= isActive(['networking_lab.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>#</div>
+        <li class="menu-item <?= isActive(['basic_electrical_engineering_laboratory.php']) ?>">
+          <a href="basic_electrical_engineering_laboratory.php" class="menu-link">
+            <div>Basic Electrical Engineering Laboratory</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['programming_lab1.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>#</div>
-          </a>
-        </li>
-        <li class="menu-item <?= isActive(['programming_lab2.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>#</div>
-          </a>
-        </li>
-        <li class="menu-item <?= isActive(['project_lab.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>#</div>
-          </a>
-        </li>
-        <li class="menu-item <?= isActive(['software_development_lab.php']) ?>">
-          <a href="#" class="menu-link">
-            <div>#</div>
+        <li class="menu-item <?= isActive(['power_electronics_laboratory.php']) ?>">
+          <a href="power_electronics_laboratory.php" class="menu-link">
+            <div>Power Electronics Laboratory</div>
           </a>
         </li>
       </ul>

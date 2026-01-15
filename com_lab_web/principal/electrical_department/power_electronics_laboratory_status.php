@@ -28,7 +28,7 @@ if (isset($_POST['save_status'])) {
 
     // Update the database row
     $update_query = "
-INSERT INTO basic_electrical_engineering_laboratory_status
+INSERT INTO power_electronics_laboratory_status
 (`Sr.No`, cpu, smps, monitor, keyboard, mouse, hard_disk, ram, brand_pc, remark)
 VALUES
 ('$id', '$cpu', '$smps', '$monitor', '$keyboard', '$mouse', '$hard_disk', '$ram', '$brand_pc', '$remark')
@@ -47,9 +47,9 @@ remark='$remark'
     $run_update = mysqli_query($conn, $update_query);
 
     if ($run_update) {
-        echo "<script>window.location='basic_electrical_engineering_laboratory_status.php';</script>";
+        echo "<script>window.location='power_electronics_laboratory_status.php';</script>";
     } else {
-        echo "<script>window.location='basic_electrical_engineering_laboratory_status.php';</script>";
+        echo "<script>window.location='power_electronics_laboratory_status.php';</script>";
     }
 }
 ?>
@@ -71,8 +71,10 @@ include('../common/header_link.php');
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-<?php include '../common/co_electrical_sidebar.php';?>
-            <!-- / Menu -->
+        <?php
+        include '../../common/sidebar_principal.php';
+        ?>
+        <!-- / Menu -->
 
             <!-- Layout container -->
             <div class="layout-page">
@@ -104,7 +106,7 @@ include('../common/header_link.php');
                             </div>
                             <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM basic_electrical_engineering_laboratory";
+                            $query = "SELECT * FROM power_electronics_laboratory";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {
@@ -133,8 +135,8 @@ include('../common/header_link.php');
     SELECT nl.`sr.no.` AS sr_no,
            s.cpu,s.smps,s.monitor,s.keyboard,s.mouse,
            s.hard_disk, s.ram, s.brand_pc, s.remark
-    FROM basic_electrical_engineering_laboratory nl
-    LEFT JOIN basic_electrical_engineering_laboratory_status s ON nl.`sr.no.`= s.`sr.no.`
+    FROM power_electronics_laboratory nl
+    LEFT JOIN power_electronics_laboratory_status s ON nl.`sr.no.`= s.`sr.no.`
 ");
                                                 if (mysqli_num_rows($query_run) > 0):
                                                     while ($row = mysqli_fetch_assoc($query_run)):

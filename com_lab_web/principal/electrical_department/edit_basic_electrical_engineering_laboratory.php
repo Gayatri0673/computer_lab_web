@@ -2,7 +2,7 @@
 $conn = mysqli_connect("localhost", "root", "", "computer");
 
 $accession_no = trim($_GET['accession_no']);
-$project_query = "SELECT * FROM power_electronics_laboratory WHERE accession_no ='$accession_no'";
+$project_query = "SELECT * FROM basic_electrical_engineering_laboratory WHERE accession_no ='$accession_no'";
 $project_query_run = mysqli_query($conn, $project_query);
 
 if (isset($_POST['edit_btn'])) {
@@ -20,7 +20,7 @@ if (isset($_POST['edit_btn'])) {
     $Remark = $_POST['Remark'];
 
     // Correct UPDATE SQL query
-    $query_update ="UPDATE power_electronics_laboratory SET 
+    $query_update ="UPDATE basic_electrical_engineering_laboratory SET 
             name_of_equipment = '$Name_of_Equipment',
             accession_no = '$accession_no',
             configration = '$Configration',
@@ -37,7 +37,7 @@ if (isset($_POST['edit_btn'])) {
 
     if ($query_update_run) {
         echo 'Data updated';
-        header("Location: power_electronics_laboratory.php");
+        header("Location: basic_electrical_engineering_laboratory.php");
     } else {
         echo 'Data NOT updated: ' . mysqli_error($conn);
     }
@@ -60,18 +60,21 @@ if (mysqli_num_rows($project_query_run)) {
             data-theme="theme-default"
             data-assets-path="../assets/"
             data-template="vertical-menu-template-free">
-        <?php include '../common/header_link.php'; ?>
+        <?php include '../../common/header_link.php'; ?>
 
         <body>
             <div class="layout-wrapper layout-content-navbar">
                 <div class="layout-container">
                     <!-- Sidebar -->
-<?php include '../common/co_electrical_sidebar.php';?>
-                    <!-- / Sidebar -->
+ <!-- Menu -->
+        <?php
+        include '../../common/sidebar_principal.php';
+        ?>
+        <!-- / Menu --><!-- / Sidebar -->
 
                     <div class="layout-page">
                         <!-- Navbar -->
-                        <?php include '../common/header.php'; ?>
+                        <?php include '../../common/header.php'; ?>
                         <!-- / Navbar -->
 
                         <div class="container-p-x">
@@ -79,7 +82,7 @@ if (mysqli_num_rows($project_query_run)) {
                                 <h5 class="card-header">Edit Details</h5>
                                 <div class="card-body">
 
-                                    <form action="edit_power_electronics_laboratory.php" method="POST">
+                                    <form action="edit_basic_electrical_engineering_laboratory.php" method="POST">
                                         <div class="row mt-3">
                                             <div class="col-lg-6">
                                                 <input type="hidden" class="form-control" name="update_acc_no" value="<?php echo $row['accession_no']; ?>" />
@@ -165,7 +168,7 @@ if (mysqli_num_rows($project_query_run)) {
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" name="edit_btn" class="btn btn-primary">Edit</button>
-                                            <a href="./power_electronics_laboratory.php" class="btn btn-secondary">Back</a>
+                                            <a href="./basic_electrical_engineering_laboratory.php" class="btn btn-secondary">Back</a>
                                         </div>
                                     </form>
 

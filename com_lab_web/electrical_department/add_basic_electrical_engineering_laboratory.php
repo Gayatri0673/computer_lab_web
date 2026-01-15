@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include '../common/co_hod_sidebar.php';?>
+<?php include '../common/co_electrical_sidebar.php';?>
             <div class="layout-page">
                 <?php include '../common/header.php'; ?>
                 <div class="container-p-x">
