@@ -28,7 +28,7 @@ if (isset($_POST['save_status'])) {
 
     // Update the database row
     $update_query = "
-INSERT INTO digital_techniques_&_microprocessor_lab_status
+INSERT INTO digital_techniques_microprocessor_lab_status
 (`sr.no.`, cpu, smps, monitor, keyboard, mouse, hard_disk, ram, brand_pc, remark)
 VALUES
 ('$id', '$cpu', '$smps', '$monitor', '$keyboard', '$mouse', '$hard_disk', '$ram', '$brand_pc', '$remark')
@@ -47,9 +47,9 @@ remark='$remark'
     $run_update = mysqli_query($conn, $update_query);
 
     if ($run_update) {
-        echo "<script>window.location='digital_techniques_&_microprocessor_lab_status.php';</script>";
+        echo "<script>window.location='digital_techniques_microprocessor_lab_status.php';</script>";
     } else {
-        echo "<script>window.location='digital_techniques_&_microprocessor_lab_status.php';</script>";
+        echo "<script>window.location='digital_techniques_microprocessor_lab_status.php';</script>";
     }
 }
 ?>
@@ -104,7 +104,7 @@ include('../common/header_link.php');
                             </div>
                             <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM digital_techniques_&_microprocessor_lab";
+                            $query = "SELECT * FROM digital_techniques_microprocessor_lab";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {
@@ -133,7 +133,7 @@ include('../common/header_link.php');
     SELECT nl.`sr.no.` AS sr_no,
            s.cpu,s.smps,s.monitor,s.keyboard,s.mouse,
            s.hard_disk, s.ram, s.brand_pc, s.remark
-    FROM digital_techniques_&_microprocessor_lab nl
+    FROM digital_techniques_microprocessor_lab nl
     LEFT JOIN an_programming_lab1_status s ON nl.`sr.no.`= s.`sr.no.`
 ");
                                                 if (mysqli_num_rows($query_run) > 0):
