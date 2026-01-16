@@ -66,7 +66,7 @@ if (mysqli_num_rows($project_query_run)) {
             <div class="layout-wrapper layout-content-navbar">
                 <div class="layout-container">
                     <!-- Sidebar -->
-                    <?php include '../common/sidebar.php'; ?>
+                    <?php include '../common/co_hod_sidebar.php';?>
                     <!-- / Sidebar -->
 
                     <div class="layout-page">

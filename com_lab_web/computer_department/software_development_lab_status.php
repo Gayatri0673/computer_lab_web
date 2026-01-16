@@ -71,9 +71,7 @@ include('../common/header_link.php');
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-            <?php
-            include '../common/sidebar.php';
-            ?>
+           <?php include '../common/co_hod_sidebar.php';?>
             <!-- / Menu -->
 
             <!-- Layout container -->
@@ -106,7 +104,7 @@ include('../common/header_link.php');
                             </div>
                             <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM programming_lab1";
+                            $query = "SELECT * FROM software_development_lab";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {

@@ -1,0 +1,161 @@
+<?php
+$conn = mysqli_connect("localhost", "root", "", "computer");
+
+if (!$conn) {
+    die("Database Connection Failed: " . mysqli_connect_error());
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $name_of_equipment = $_POST['name_of_equipment'];
+    $accession_no = $_POST['accession_no'];
+    $Configration = $_POST['Configration'];
+    $Maintenance = $_POST['Maintenance'];
+    $System_no = $_POST['System_no'];
+    $GRN_no = $_POST['GRN_no'];
+    $Unit_Rate = $_POST['Unit_Rate'];
+    $Quantity = $_POST['Quantity'];
+    $Amount = $_POST['Amount'];
+    $Remark = $_POST['Remark'];
+
+    $query = "INSERT INTO networking_lab 
+        (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
+        VALUES 
+        ('$name_of_equipment', '$accession_no', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
+
+
+    if (mysqli_query($conn, $query)) {
+        header("Location: networking_lab.php?msg=added");
+        exit;
+    } else {
+        echo "Error: " . mysqli_error($conn);
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr"
+    data-theme="theme-default"
+    data-assets-path="../assets/"
+    data-template="vertical-menu-template-free">
+<?php include '../../common/header_link.php'; ?>
+<link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
+<link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
+<body>
+    <div class="layout-wrapper layout-content-navbar">
+        <!-- Menu -->
+        <?php
+        include '../../common/sidebar_principal.php';
+        ?>
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Navbar -->
+            <?php
+            include '../../common/header.php';
+            ?>
+            <!-- / Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-p-x flex-grow-1 container-p-y">
+                    <div class="card my-4">
+                        <h5 class="card-header">ADD Details</h5>
+                        <div class="card-body">
+                            <form method="POST">
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="name_of_equipment" required />
+                                            <label>name_of_equipment</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="number" step="0.01" class="form-control" name="accession_no" required />
+                                            <label>accession_no</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="Configuration" required />
+                                            <label>Configuration</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="number" step="0.01" class="form-control" name="Maintenance" required />
+                                            <label>Maintenance</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="System_no" required />
+                                            <label>System no</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="GRN_no" required />
+                                            <label>GRN no</label>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-lg-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="Unit_Rate" required />
+                                            <label>Unit Rate</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="Quantity" required />
+                                            <label>Quantity</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="Amount" required />
+                                            <label>Amount</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" name="Remark" required />
+                                            <label>Remark</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <a href="./networking_lab.php" class="btn btn-secondary">Back</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
