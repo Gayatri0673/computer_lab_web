@@ -49,7 +49,7 @@ remark='$remark'
     if ($run_update) {
         echo "<script>window.location='digital_techniques_microprocessor_lab_status.php';</script>";
     } else {
-        echo "<script>window.location='digital_techniques_&_microprocessor_lab_status.php';</script>";
+        echo "<script>window.location='digital_techniques_microprocessor_lab_status.php';</script>";
     }
 }
 ?>
@@ -134,7 +134,7 @@ include('../common/header_link.php');
            s.cpu,s.smps,s.monitor,s.keyboard,s.mouse,
            s.hard_disk, s.ram, s.brand_pc, s.remark
     FROM digital_techniques_microprocessor_lab nl
-    LEFT JOIN digital_techniques_microprocessor_lab_status s ON nl.`sr.no.`= s.`sr.no.`
+    LEFT JOIN an_programming_lab1_status s ON nl.`sr.no.`= s.`sr.no.`
 ");
                                                 if (mysqli_num_rows($query_run) > 0):
                                                     while ($row = mysqli_fetch_assoc($query_run)):

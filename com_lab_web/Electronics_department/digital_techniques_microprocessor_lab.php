@@ -10,7 +10,6 @@ if (isset($_POST['delete_btn'])) {
         header("Location: digital_techniques_microprocessor_lab.php");
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html
