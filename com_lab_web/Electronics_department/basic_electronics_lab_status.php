@@ -87,7 +87,7 @@ include('../common/header_link.php');
                     <!-- Content -->
 
                     <div class="container-p-x flex-grow-1 container-p-y">
-                        <h4 class="text-muted fw-bold py-3 mb-4">Programming Lab1</h4>
+                        <h4 class="text-muted fw-bold py-3 mb-4">Basic Electronics Lab</h4>
 
                         <!-- Hoverable Table rows -->
                         <div class="card">
