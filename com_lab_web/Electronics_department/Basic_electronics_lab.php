@@ -10,6 +10,7 @@ if (isset($_POST['delete_btn'])) {
         header("Location: Basic_electronics_lab.php");
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html
