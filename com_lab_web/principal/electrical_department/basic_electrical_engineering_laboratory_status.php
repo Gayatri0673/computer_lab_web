@@ -28,8 +28,8 @@ if (isset($_POST['save_status'])) {
 
     // Update the database row
     $update_query = "
-INSERT INTO digital_techniques_microprocessor_lab_status
-(`sr.no.`, cpu, smps, monitor, keyboard, mouse, hard_disk, ram, brand_pc, remark)
+INSERT INTO basic_electrical_engineering_laboratory_status
+(`Sr.No`, cpu, smps, monitor, keyboard, mouse, hard_disk, ram, brand_pc, remark)
 VALUES
 ('$id', '$cpu', '$smps', '$monitor', '$keyboard', '$mouse', '$hard_disk', '$ram', '$brand_pc', '$remark')
 ON DUPLICATE KEY UPDATE
@@ -47,9 +47,9 @@ remark='$remark'
     $run_update = mysqli_query($conn, $update_query);
 
     if ($run_update) {
-        echo "<script>window.location='digital_techniques_microprocessor_lab_status.php';</script>";
+        echo "<script>window.location='basic_electrical_engineering_laboratory_status.php';</script>";
     } else {
-        echo "<script>window.location='digital_techniques_&_microprocessor_lab_status.php';</script>";
+        echo "<script>window.location='basic_electrical_engineering_laboratory_status.php';</script>";
     }
 }
 ?>
@@ -71,7 +71,7 @@ include('../common/header_link.php');
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-         <?php include '../common/electronics_hod_sidebar.php';?>
+           <?php include '../common/electrical_hod_sidebar.php';?>
             <!-- / Menu -->
 
             <!-- Layout container -->
@@ -87,7 +87,7 @@ include('../common/header_link.php');
                     <!-- Content -->
 
                     <div class="container-p-x flex-grow-1 container-p-y">
-                        <h4 class="text-muted fw-bold py-3 mb-4">Digital Techniques & Microprocessor Lab </h4>
+                        <h4 class="text-muted fw-bold py-3 mb-4">Networking LAB</h4>
 
                         <!-- Hoverable Table rows -->
                         <div class="card">
@@ -104,7 +104,7 @@ include('../common/header_link.php');
                             </div>
                             <?php
                             $conn = mysqli_connect("localhost", "root", "", "computer");
-                            $query = "SELECT * FROM digital_techniques_microprocessor_lab";
+                            $query = "SELECT * FROM basic_electrical_engineering_laboratory";
                             $project_run = mysqli_query($conn, $query);
                             $sr = 1;
                             if (mysqli_num_rows($project_run) > 0) {
@@ -133,8 +133,8 @@ include('../common/header_link.php');
     SELECT nl.`sr.no.` AS sr_no,
            s.cpu,s.smps,s.monitor,s.keyboard,s.mouse,
            s.hard_disk, s.ram, s.brand_pc, s.remark
-    FROM digital_techniques_microprocessor_lab nl
-    LEFT JOIN digital_techniques_microprocessor_lab_status s ON nl.`sr.no.`= s.`sr.no.`
+    FROM basic_electrical_engineering_laboratory nl
+    LEFT JOIN basic_electrical_engineering_laboratory_status s ON nl.`sr.no.`= s.`sr.no.`
 ");
                                                 if (mysqli_num_rows($query_run) > 0):
                                                     while ($row = mysqli_fetch_assoc($query_run)):

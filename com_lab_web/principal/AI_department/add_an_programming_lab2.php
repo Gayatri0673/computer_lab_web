@@ -18,13 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Amount = $_POST['Amount'];
     $Remark = $_POST['Remark'];
 
-$query = "INSERT INTO `digital_techniques_microprocessor_lab`
+    $query = "INSERT INTO an_programming_lab2
         (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
         ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
     if (mysqli_query($conn, $query)) {
-        header("Location: digital_techniques_microprocessor_lab.php?msg=added");
+        header("Location: AN_programming_lab2.php?msg=added");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
@@ -35,14 +35,14 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr"
     data-theme="theme-default" data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
-<?php include '../common/header_link.php'; ?>
+<?php include '../../common/header_link.php'; ?>
 
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include '../common/electronics_hod_sidebar.php';?>
+            <?php include '../../common/AI_hod_sidebar.php';?>
             <div class="layout-page">
-                <?php include '../common/header.php'; ?>
+                <?php include '../../common/header.php'; ?>
                 <div class="container-p-x">
                     <div class="card my-4">
                         <h5 class="card-header">ADD Details</h5>
@@ -131,7 +131,7 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <a href="./digital_techniques_microprocessor_lab.php" class="btn btn-secondary">Back</a>
+                                    <a href="./AN_programming_lab2.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
                         </div>
