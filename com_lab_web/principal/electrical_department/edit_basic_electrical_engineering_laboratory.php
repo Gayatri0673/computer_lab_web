@@ -2,7 +2,7 @@
 $conn = mysqli_connect("localhost", "root", "", "computer");
 
 $accession_no = trim($_GET['accession_no']);
-$project_query = "SELECT * FROM digital_techniques_microprocessor_lab WHERE accession_no ='$accession_no'";
+$project_query = "SELECT * FROM basic_electrical_engineering_laboratory WHERE accession_no ='$accession_no'";
 $project_query_run = mysqli_query($conn, $project_query);
 
 if (isset($_POST['edit_btn'])) {
@@ -20,7 +20,7 @@ if (isset($_POST['edit_btn'])) {
     $Remark = $_POST['Remark'];
 
     // Correct UPDATE SQL query
-    $query_update ="UPDATE digital_techniques_microprocessor_lab SET 
+    $query_update ="UPDATE basic_electrical_engineering_laboratory SET 
             name_of_equipment = '$Name_of_Equipment',
             accession_no = '$accession_no',
             configration = '$Configration',
@@ -37,7 +37,7 @@ if (isset($_POST['edit_btn'])) {
 
     if ($query_update_run) {
         echo 'Data updated';
-        header("Location: digital_techniques_microprocessor_lab.php");
+        header("Location: basic_electrical_engineering_laboratory.php");
     } else {
         echo 'Data NOT updated: ' . mysqli_error($conn);
     }
@@ -66,7 +66,7 @@ if (mysqli_num_rows($project_query_run)) {
             <div class="layout-wrapper layout-content-navbar">
                 <div class="layout-container">
                     <!-- Sidebar -->
-<?php include '../common/electronics_hod_sidebar.php';?>
+                    <?php include '../common/electrical_hod_sidebar.php';?>
                     <!-- / Sidebar -->
 
                     <div class="layout-page">
@@ -79,7 +79,7 @@ if (mysqli_num_rows($project_query_run)) {
                                 <h5 class="card-header">Edit Details</h5>
                                 <div class="card-body">
 
-                                    <form action="edit_digital_techniques_microprocessor_lab.php" method="POST">
+                                    <form action="edit_basic_electrical_engineering_laboratory.php" method="POST">
                                         <div class="row mt-3">
                                             <div class="col-lg-6">
                                                 <input type="hidden" class="form-control" name="update_acc_no" value="<?php echo $row['accession_no']; ?>" />
@@ -107,7 +107,7 @@ if (mysqli_num_rows($project_query_run)) {
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="form-floating mb-3">
-                                                    <input type="number" step="0.01" class="form-control" name="maintenance" value="<?php echo $row['maintenance']; ?>" />
+                                                    <input type="number" step="0.01" class="form-control" name="Maintenance" value="<?php echo $row['maintenance']; ?>" />
                                                     <label>Maintenance</label>
                                                 </div>
                                             </div>
@@ -116,7 +116,7 @@ if (mysqli_num_rows($project_query_run)) {
                                         <div class="row">
                                             <div class="col-lg-4">
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" name="system_no" value="<?php echo $row['system_no']; ?>" />
+                                                    <input type="text" class="form-control" name="System_no" value="<?php echo $row['system_no']; ?>" />
                                                     <label>System no</label>
                                                 </div>
                                             </div>
@@ -165,7 +165,7 @@ if (mysqli_num_rows($project_query_run)) {
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" name="edit_btn" class="btn btn-primary">Edit</button>
-                                            <a href="./digital_techniques_microprocessor_lab.php" class="btn btn-secondary">Back</a>
+                                            <a href="./basic_electrical_engineering_laboratory.php" class="btn btn-secondary">Back</a>
                                         </div>
                                     </form>
 

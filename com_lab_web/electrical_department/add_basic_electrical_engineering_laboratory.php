@@ -18,13 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Amount = $_POST['Amount'];
     $Remark = $_POST['Remark'];
 
-$query = "INSERT INTO `digital_techniques_microprocessor_lab`
+    $query = "INSERT INTO basic_electrical_engineering_laboratory 
         (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
         ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
     if (mysqli_query($conn, $query)) {
-        header("Location: digital_techniques_microprocessor_lab.php?msg=added");
+        header("Location: basic_electrical_engineering_laboratory.php?msg=added");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
@@ -40,7 +40,7 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include '../common/electronics_hod_sidebar.php';?>
+            <?php include '../common/electrical_hod_sidebar.php';?>
             <div class="layout-page">
                 <?php include '../common/header.php'; ?>
                 <div class="container-p-x">
@@ -62,7 +62,6 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
                                         </div>
                                     </div>
                                 </div>
-
                                   <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-floating mb-3">
@@ -77,8 +76,6 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="form-floating mb-3">
@@ -86,17 +83,12 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
                                             <label>System no</label>
                                         </div>
                                     </div>
-
-
                                     <div class="col-lg-4">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" name="GRN_no" required />
                                             <label>GRN no</label>
                                         </div>
                                     </div>
-
-
-
                                     <div class="col-lg-4">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" name="Unit_Rate" required />
@@ -104,7 +96,6 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="form-floating mb-3">
@@ -112,16 +103,12 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
                                             <label>Quantity</label>
                                         </div>
                                     </div>
-
-
                                     <div class="col-lg-4">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" name="Amount" required />
                                             <label>Amount</label>
                                         </div>
                                     </div>
-
-
                                     <div class="col-lg-4">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control" name="Remark" required />
@@ -131,7 +118,7 @@ $query = "INSERT INTO `digital_techniques_microprocessor_lab`
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <a href="./digital_techniques_microprocessor_lab.php" class="btn btn-secondary">Back</a>
+                                    <a href="./basic_electrical_engineering_laboratory.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
                         </div>

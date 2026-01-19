@@ -1,5 +1,5 @@
 <?php
- $conn = mysqli_connect("localhost", "root", "", "artificial_intelligence_&_ml_lab");
+ $conn = mysqli_connect("localhost", "root", "", "computer");
 
 if (!$conn) {
     die("Database Connection Failed: " . mysqli_connect_error());
@@ -18,13 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Amount = $_POST['Amount'];
     $Remark = $_POST['Remark'];
 
-    $query = "INSERT INTO AN-01_programming_lab
+$query = "INSERT INTO `digital_techniques_microprocessor_lab`
         (name_of_equipment, accession_no, configration, Maintenance, System_no, GRN_no, Unit_Rate, Quantity, Amount, Remark)
         VALUES 
         ('$Name_of_Equipment', '$Accession_No', '$Configration', '$Maintenance', '$System_no', '$GRN_no', '$Unit_Rate', '$Quantity', '$Amount', '$Remark')";
     
     if (mysqli_query($conn, $query)) {
-        header("Location: AN-01_programming_lab.php?msg=added");
+        header("Location: digital_techniques_microprocessor_lab.php?msg=added");
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include '../common/sidebar.php'; ?>
+            <?php include '../common/electronics_hod_sidebar.php';?>
             <div class="layout-page">
                 <?php include '../common/header.php'; ?>
                 <div class="container-p-x">
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
-                                    <a href="./AN-01_programming_lab.php" class="btn btn-secondary">Back</a>
+                                    <a href="./digital_techniques_microprocessor_lab.php" class="btn btn-secondary">Back</a>
                                 </div>
                             </form>
                         </div>
