@@ -21,7 +21,7 @@ if (isset($_POST['delete_btn'])) {
     data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
 <?php
-include('../common/header_link.php');
+include('../../common/header_link.php');
 ?>
 
 <body>
@@ -29,16 +29,15 @@ include('../common/header_link.php');
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-            <?php
-             include '../common/electrical_hod_sidebar.php';
-            ?>
+                       <?php include '../../common/sidebar_principal.php';?>
+
             <!-- / Menu -->
 
             <!-- Layout container -->
             <div class="layout-page">
                 <!-- Navbar -->
                 <?php
-                include '../common/header.php';
+                include '../../common/header.php';
                 ?>
                 <!-- / Navbar -->
                 <!-- Content wrapper -->

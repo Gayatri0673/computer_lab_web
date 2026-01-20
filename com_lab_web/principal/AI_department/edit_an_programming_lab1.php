@@ -60,13 +60,13 @@ if (mysqli_num_rows($project_query_run)) {
             data-theme="theme-default"
             data-assets-path="../assets/"
             data-template="vertical-menu-template-free">
-        <?php include '../common/header_link.php'; ?>
+        <?php include '../../common/header_link.php'; ?>
 
         <body>
             <div class="layout-wrapper layout-content-navbar">
                 <div class="layout-container">
                     <!-- Sidebar -->
-<?php include '../../common/AI_hod_sidebar.php';?>
+            <?php include '../../common/sidebar_principal.php';?>
                     <!-- / Sidebar -->
 
                     <div class="layout-page">

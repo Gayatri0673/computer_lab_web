@@ -28,13 +28,10 @@ if (isset($_POST['save_status'])) {
 
     // Update the database row
     $update_query = "
-<<<<<<<< HEAD:com_lab_web/principal/Electronics_department/digital_techniques_microprocessor_lab_status.php
 INSERT INTO digital_techniques_microprocessor_lab_status
 (`sr.no.`, cpu, smps, monitor, keyboard, mouse, hard_disk, ram, brand_pc, remark)
-========
 INSERT INTO me_lab_3_status
 (`Sr.No`, cpu, smps, monitor, keyboard, mouse, hard_disk, ram, brand_pc, remark)
->>>>>>>> f8d157754378960fbbd085fc50ee7b9acde9c7ea:com_lab_web/Mechanical_department/me_lab_3_status.php
 VALUES
 ('$id', '$cpu', '$smps', '$monitor', '$keyboard', '$mouse', '$hard_disk', '$ram', '$brand_pc', '$remark')
 ON DUPLICATE KEY UPDATE
@@ -69,7 +66,7 @@ remark='$remark'
     data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
 <?php
-include('../common/header_link.php');
+include('../../common/header_link.php');
 ?>
 
 <body>
@@ -77,18 +74,14 @@ include('../common/header_link.php');
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-         <?php include '../common/electronics_hod_sidebar.php';?>
-            <!-- / Menu -->
-        <?php
-        include '../common/sidebar_principal.php';
-        ?>
+                     <?php include '../../common/sidebar_principal.php';?>
         <!-- / Menu -->
 
             <!-- Layout container -->
             <div class="layout-page">
                 <!-- Navbar -->
                 <?php
-                include '../common/header.php';
+                include '../../common/header.php';
                 ?>
                 <!-- / Navbar -->
 

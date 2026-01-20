@@ -66,12 +66,12 @@ if (mysqli_num_rows($project_query_run)) {
             <div class="layout-wrapper layout-content-navbar">
                 <div class="layout-container">
                     <!-- Sidebar -->
-<?php include '../common/electronics_hod_sidebar.php';?>
+            <?php include '../../common/sidebar_principal.php';?>
                     <!-- / Sidebar -->
 
                     <div class="layout-page">
                         <!-- Navbar -->
-                        <?php include '../common/header.php'; ?>
+                        <?php include '../../common/header.php'; ?>
                         <!-- / Navbar -->
 
                         <div class="container-p-x">

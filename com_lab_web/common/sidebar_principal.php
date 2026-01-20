@@ -49,12 +49,12 @@ function isMenuOpen($pages)
     });
   });
 
-  document.querySelectorAll('.menu-sub a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelectorAll('.menu-item.open')
-        .forEach(item => item.classList.remove('open'));
-    });
-  });
+  // document.querySelectorAll('.menu-sub a').forEach(link => {
+  //   link.addEventListener('click', () => {
+  //     document.querySelectorAll('.menu-item.open')
+  //       .forEach(item => item.classList.remove('open'));
+  //   });
+  // });
 </script>
 
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
@@ -82,7 +82,7 @@ function isMenuOpen($pages)
     </li>
 
     <!-- Home Menu -->
-    <li class="menu-item menu-item active open <?= isMenuOpen(['networking_lab.php', 'programming_lab1.php', 'programming_lab2.php', 'project_lab.php']) ?>">
+    <li class="menu-item menu-item active <?= isMenuOpen(['networking_lab.php', 'programming_lab1.php', 'programming_lab2.php', 'project_lab.php']) ?>">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
         <div data-i18n="Layouts">Computer Department</div>
@@ -117,33 +117,33 @@ function isMenuOpen($pages)
             <div>Software Development Lab</div>
           </a>
         </li>
-
       </ul>
     </li>
+
     <!-- AI department -->
-    <li class="menu-item menu-item active">
+    <li class="menu-item menu-item active <?= isMenuOpen(['AN_programming_lab1.php', 'AN_programming_lab2.php', 'AN_software_development_lab.php', 'AN_adavance_programming_lab.php']) ?>">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
         <div data-i18n="Layouts">Artificial Intelligence department</div>
       </a>
       <ul class="menu-sub">
         <li class="menu-item <?= isActive(['AN_programming_lab1.php']) ?>">
-          <a href="AN_programming_lab1.php" class="menu-link">
+          <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/AI_department/AN_programming_lab1.php" class="menu-link">
             <div>programming lab1</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['AN_programming_lab2.php']) ?>">
-          <a href="AN_programming_lab2.php" class="menu-link">
+          <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/AI_department/AN_programming_lab2.php" class="menu-link">
             <div>Programming Lab2</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['AN_software_development_lab.php']) ?>">
-          <a href="AN_software_development_lab.php" class="menu-link">
+          <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/AI_department/AN-03_software_development_lab.php" class="menu-link">
             <div>Software Development Lab</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['AN_adavance_programming_lab.php']) ?>">
-          <a href="AN_adavance_programming_lab.php" class="menu-link">
+          <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/AI_department/AN-04_advance_programming_lab.php" class="menu-link">
             <div>Adavance Programming Lab</div>
           </a>
         </li>
@@ -151,56 +151,58 @@ function isMenuOpen($pages)
     </li>
 
     <!-- Electrical  department -->
-    <li class="menu-item menu-item active">
+    <li class="menu-item menu-item active <?= isMenuOpen(['basic_electrical_engineering_laboratory.php','power_electronics_laboratory.php']) ?>">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
         <div data-i18n="Layouts">Electrical department</div>
       </a>
       <ul class="menu-sub">
         <li class="menu-item <?= isActive(['basic_electrical_engineering_laboratory.php']) ?>">
-          <a href="basic_electrical_engineering_laboratory.php" class="menu-link">
+          <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/electrical_department/basic_electrical_engineering_laboratory.php" class="menu-link">
             <div>Basic Electrical Engineering Laboratory</div>
           </a>
         </li>
         <li class="menu-item <?= isActive(['power_electronics_laboratory.php']) ?>">
-          <a href="power_electronics_laboratory.php" class="menu-link">
+           <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/electrical_department/power_electronics_laboratory.php" class="menu-link">
             <div>Power Electronic Laboratory</div>
           </a>
         </li>
-        <!-- Electronic department -->
-        <li class="menu-item menu-item active ">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons bx bx-layout"></i>
-            <div data-i18n="Layouts">Electronics department</div>
+      </ul>
+    </li>
+
+
+    <!-- Electronic department -->
+    <li class="menu-item menu-item active <?= isMenuOpen(['basic_electronics_lab.php', 'digital_techniques_microprocessor_lab.php']) ?>">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-layout"></i>
+        <div data-i18n="Layouts">Electronics department</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item <?= isActive(['basic_electronics_lab.php']) ?>">
+           <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/Electronics_department/basic_electronics_lab.php" class="menu-link">
+            <div>Basic Electronics Lab</div>
           </a>
-          <ul class="menu-sub">
-            <li class="menu-item <?= isActive(['basic_electronics_lab.php']) ?>">
-              <a href="basic_electronics_lab.php" class="menu-link">
-                <div>Basic Electronics Lab</div>
-              </a>
-            </li>
-            <li class="menu-item <?= isActive(['digital_techniques_microprocessor_lab.php']) ?>">
-              <a href="digital_techniques_microprocessor_lab.php" class="menu-link">
-                <div>Digital Techniques & Microprocessor Lab</div>
-              </a>
-            </li>
+        </li>
+        <li class="menu-item <?= isActive(['digital_techniques_microprocessor_lab.php']) ?>">
+           <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/Electronics_department/digital_techniques_microprocessor_lab.php" class="menu-link">
+            <div>Digital Techniques & Microprocessor Lab</div>
+          </a>
+        </li>
+      </ul>
+    </li>
 
 
-            <!-- Mechanical department -->
-            <li class="menu-item menu-item active open <?= isMenuOpen(['me_lab_3.php']) ?>">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">Mechanical department</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item <?= isActive(['me_lab_3.php']) ?>">
-                  <a href="me_lab_3.php" class="menu-link">
-                    <div>Mechanical lab 3</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+    <!-- Mechanical department -->
+    <li class="menu-item menu-item active <?= isMenuOpen(['me_lab_3.php']) ?>">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-layout"></i>
+        <div data-i18n="Layouts">Mechanical department</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item <?= isActive(['me_lab_3.php']) ?>">
+         <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/principal/mechanical_department/me_lab_3.php" class="menu-link">
+            <div>Mechanical lab 3</div>
+          </a>
         </li>
       </ul>
     </li>

@@ -35,14 +35,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr"
     data-theme="theme-default" data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
-<?php include '../common/header_link.php'; ?>
+<?php include '../../common/header_link.php'; ?>
 
 <body>
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            <?php include '../common/electronics_hod_sidebar.php';?>
+            <?php include '../../common/sidebar_principal.php';?>
             <div class="layout-page">
-                <?php include '../common/header.php'; ?>
+                <?php include '../../common/header.php'; ?>
                 <div class="container-p-x">
                     <div class="card my-4">
                         <h5 class="card-header">ADD Details</h5>

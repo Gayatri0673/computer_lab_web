@@ -20,7 +20,7 @@ if (isset($_POST['delete_btn'])) {
     data-assets-path="../assets/"
     data-template="vertical-menu-template-free">
 <?php
-include('../common/header_link.php');
+include('../../common/header_link.php');
 ?>
 <link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
 <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
@@ -30,7 +30,7 @@ include('../common/header_link.php');
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-           <?php include '../../common/AI_hod_sidebar.php';?>
+            <?php include '../../common/sidebar_principal.php';?>
             <!-- / Menu -->
             <!-- Layout container -->
             <div class="layout-page">
