@@ -34,9 +34,6 @@ function isMenuOpen($pages)
 </style>
 
 
-<script src="../../assets/vendor/libs/jquery/jquery.js"></script>
-<script src="../../assets/vendor/js/bootstrap.js"></script>
-<script src="../../assets/vendor/js/menu.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
