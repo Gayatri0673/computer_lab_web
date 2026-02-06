@@ -381,7 +381,7 @@ chartArea.render();
 var optionsBar = {
   chart: {
     type: 'bar',
-    height: 380,
+    height: 300,
     width: '100%',
     stacked: true,
   },
@@ -392,10 +392,10 @@ var optionsBar = {
   },
   colors: colorPalette,
   series: [{
-    name: "Clothing",
+    name: "Working PC",
     data: [42, 52, 16, 55, 59, 51, 45, 32, 26, 33, 44, 51, 42, 56],
   }, {
-    name: "Food Products",
+    name: "Under Maintenance",
     data: [6, 12, 4, 7, 5, 3, 6, 4, 3, 3, 5, 6, 7, 4],
   }],
   labels: [10,11,12,13,14,15,16,17,18,19,20,21,22,23],
@@ -441,7 +441,7 @@ var optionDonut = {
   chart: {
       type: 'donut',
       width: '100%',
-      height: 400
+      height: 500
   },
   dataLabels: {
     enabled: false,
@@ -450,7 +450,7 @@ var optionDonut = {
     pie: {
       customScale: 0.8,
       donut: {
-        size: '75%',
+        size: '70%',
       },
       offsetY: 20,
     },
@@ -465,10 +465,10 @@ var optionDonut = {
       fontSize: '18px'
     }
   },
-  series: [21, 23, 19, 14, 6],
-  labels: ['Clothing', 'Food Products', 'Electronics', 'Kitchen Utility', 'Gardening'],
+  series: [35, 25, 20, 10, 10],
+  labels: ['Computer', 'AI & ML', 'Electrical', 'Electronics', 'Mechanical'],
   legend: {
-    position: 'left',
+    position: 'top',
     offsetY: 80
   }
 }

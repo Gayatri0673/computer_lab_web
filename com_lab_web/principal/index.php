@@ -117,14 +117,14 @@ include '../common/header_link.php';
                       <div class="row">
                         <div class="col-md-3 col-sm-3 col-6 my-1 bdr-cls">
                           <div class="earn-view">
-                            <spna class="fas fa-crown earn-icon"></spna>
+                            <spna class="fas fa-computer earn-icon" style="color:black;"></spna>
 
                             <div class="earn-view-text">
-                              <p class="name-text">
-                                Wallet Ballance
+                              <p class="name-text" style="color:black;">
+                                Total PC
                               </p>
                               <h6 class="balance-text">
-                                $1684.54
+                                1684
                               </h6>
                             </div>
                           </div>
@@ -132,14 +132,14 @@ include '../common/header_link.php';
 
                         <div class="col-md-3 col-sm-3 col-6 my-1 bdr-cls">
                           <div class="earn-view">
-                            <spna class="fas fa-heart earn-icon"></spna>
+                            <spna class="fas fa-computer earn-icon" style="color:black;"></spna>
 
                             <div class="earn-view-text">
-                              <p class="name-text">
-                                Refferal Earning
+                              <p class="name-text" style="color:black;">
+                                Working PC
                               </p>
                               <h6 class="balance-text">
-                                $1204.54
+                                1204
                               </h6>
                             </div>
                           </div>
@@ -147,14 +147,14 @@ include '../common/header_link.php';
 
                         <div class="col-md-3 col-sm-3 col-6 my-1 bdr-cls">
                           <div class="earn-view">
-                            <spna class="fab fa-salesforce earn-icon"></spna>
+                            <spna class="fas fa-computer earn-icon" style="color:black;"></spna>
 
                             <div class="earn-view-text">
-                              <p class="name-text">
-                                Estimate Sales
+                              <p class="name-text" style="color:black;">
+                                Defected PC
                               </p>
                               <h6 class="balance-text">
-                                $184.54
+                                400
                               </h6>
                             </div>
                           </div>
@@ -162,14 +162,14 @@ include '../common/header_link.php';
 
                         <div class="col-md-3 col-sm-3 col-6 my-1 bdr-cls">
                           <div class="earn-view">
-                            <spna class="fas fa-chart-line earn-icon"></spna>
+                            <spna class="fas fa-computer earn-icon" style="color:black;"></spna>
 
                             <div class="earn-view-text">
-                              <p class="name-text">
-                                Earning
+                              <p class="name-text" style="color:black;">
+                                Under Maintenance
                               </p>
                               <h6 class="balance-text">
-                                $16984.54
+                                80
                               </h6>
                             </div>
                           </div>
@@ -198,88 +198,94 @@ include '../common/header_link.php';
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <div class="revinue revinue-one_hybrid">
-                      <div class="revinue-hedding">
-                        <div class="w-title">
-                          <div class="w-icon">
-                            <span class="fas fa-users"></span>
-                          </div>
-                          <div class="sm-chart-text">
-                            <p class="w-value">100</p>
-                            <h5 style="color: white;">Computer Department</h5>
+                    <a href="computer_department/networking_lab.php">
+                      <div class="revinue revinue-one_hybrid">
+                        <div class="revinue-hedding">
+                          <div class="w-title">
+                            <div class="w-icon">
+                              <span class="fas fa-computer"></span>
+                            </div>
+                            <div class="sm-chart-text">
+                              <p class="w-value">100</p>
+                              <h5 style="color: white;">Computer Department</h5>
+                            </div>
                           </div>
                         </div>
                       </div>
+                    </a>
+                  </div>
 
-                    </div>
+
+                  <div class="col-lg-4 col-md-6 col-sm-6 my-2">
+                    <a href="AI_department/AN_programming_lab1.php">
+                      <div class="revinue revinue-one_hybrid">
+                        <div class="revinue-hedding">
+                          <div class="w-title">
+                            <div class="w-icon">
+                              <span class="fas fa-computer"></span>
+                            </div>
+                            <div class="sm-chart-text">
+                              <p class="w-value">60</p>
+                              <h5 style="color: white;">Artificial Intelligence Department</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
                   </div>
 
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <div class="revinue revinue-one_hybrid">
-                      <div class="revinue-hedding">
-                        <div class="w-title">
-                          <div class="w-icon">
-                            <span class="fas fa-users"></span>
-                          </div>
-                          <div class="sm-chart-text">
-                            <p class="w-value">60</p>
-                            <h5 style="color: white;">Artificial Intelligence Department</h5>
+                    <a href="electrical_department/basic_electrical_engineering_laboratory.php" style="text-decoration: none;">
+                      <div class="revinue revinue-one_hybrid">
+                        <div class="revinue-hedding">
+                          <div class="w-title">
+                            <div class="w-icon">
+                              <span class="fas fa-computer"></span>
+                            </div>
+                            <div class="sm-chart-text">
+                              <p class="w-value">50</p>
+                              <h5 style="color: white;">Electrical Department</h5>
+                            </div>
                           </div>
                         </div>
                       </div>
-
-                    </div>
+                    </a>
                   </div>
 
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <div class="revinue revinue-one_hybrid">
-                      <div class="revinue-hedding">
-                        <div class="w-title">
-                          <div class="w-icon">
-                            <span class="fas fa-users"></span>
-                          </div>
-                          <div class="sm-chart-text">
-                            <p class="w-value">50</p>
-                            <h5 style="color: white;">Electrical Department</h5>
+                    <a href="Electronics_department/basic_electronics_lab.php" style="text-decoration: none;">
+                      <div class="revinue revinue-one_hybrid">
+                        <div class="revinue-hedding">
+                          <div class="w-title">
+                            <div class="w-icon">
+                              <span class="fas fa-computer"></span>
+                            </div>
+                            <div class="sm-chart-text">
+                              <p class="w-value">50</p>
+                              <h5 style="color: white;">Electronics Department</h5>
+                            </div>
                           </div>
                         </div>
                       </div>
-
-                    </div>
+                    </a>
                   </div>
 
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <div class="revinue revinue-one_hybrid">
-                      <div class="revinue-hedding">
-                        <div class="w-title">
-                          <div class="w-icon">
-                            <span class="fas fa-users"></span>
-                          </div>
-                          <div class="sm-chart-text">
-                            <p class="w-value">50</p>
-                            <h5 style="color: white;">Electronics Department</h5>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <div class="revinue revinue-one_hybrid">
-                      <div class="revinue-hedding">
-                        <div class="w-title">
-                          <div class="w-icon">
-                            <span class="fas fa-users"></span>
-                          </div>
-                          <div class="sm-chart-text">
-                            <p class="w-value">50</p>
-                            <h5 style="color: white;">Mechanical Department</h5>
+                    <a href="Mechanical_department/me_lab_3.php" style="text-decoration: none;">
+                      <div class="revinue revinue-one_hybrid">
+                        <div class="revinue-hedding">
+                          <div class="w-title">
+                            <div class="w-icon">
+                              <span class="fas fa-computer"></span>
+                            </div>
+                            <div class="sm-chart-text">
+                              <p class="w-value">50</p>
+                              <h5 style="color: white;">Mechanical Department</h5>
+                            </div>
                           </div>
                         </div>
                       </div>
-
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
