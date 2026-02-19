@@ -214,7 +214,7 @@
 
             <div class="auth-buttons">
                 <a href="./login.php" class="auth-btn">Login</a>
-                <a href="./logout.php" class="auth-btn">Logout</a>
+                <!-- <a href="./logout.php" class="auth-btn">Logout</a> -->
             </div>
         </div>
     </div>
