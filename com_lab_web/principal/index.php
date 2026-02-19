@@ -32,6 +32,117 @@
 include '../common/header_link.php';
 
 ?>
+<?php
+$conn = mysqli_connect("localhost", "root", "", "computer");
+
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+/* ==========================================
+   OVERALL TOTAL (ALL COMPUTER DEPARTMENT LABS)
+   ========================================== */
+$total_query = "
+SELECT
+IFNULL((SELECT SUM(Quantity) FROM networking_lab),0) +
+IFNULL((SELECT SUM(Quantity) FROM programming_lab1),0) +
+IFNULL((SELECT SUM(Quantity) FROM programming_lab2),0) +
+IFNULL((SELECT SUM(Quantity) FROM project_lab),0)
+AS total_pc
+";
+$total_pc = mysqli_fetch_assoc(mysqli_query($conn, $total_query))['total_pc'];
+
+
+/* ==========================================
+   WORKING PC (Maintenance = 'No')
+   ========================================== */
+$working_query = "
+SELECT
+IFNULL((SELECT SUM(Quantity) FROM networking_lab WHERE Maintenance='No'),0) +
+IFNULL((SELECT SUM(Quantity) FROM programming_lab1 WHERE Maintenance='No'),0) +
+IFNULL((SELECT SUM(Quantity) FROM programming_lab2 WHERE Maintenance='No'),0) +
+IFNULL((SELECT SUM(Quantity) FROM project_lab WHERE Maintenance='No'),0)
+AS working_pc
+";
+$working_pc = mysqli_fetch_assoc(mysqli_query($conn, $working_query))['working_pc'];
+
+
+/* ==========================================
+   DEFECTED PC (Remark = 'Defected')
+   ========================================== */
+$defected_query = "
+SELECT
+IFNULL((SELECT SUM(Quantity) FROM networking_lab WHERE Remark='Defected'),0) +
+IFNULL((SELECT SUM(Quantity) FROM programming_lab1 WHERE Remark='Defected'),0) +
+IFNULL((SELECT SUM(Quantity) FROM programming_lab2 WHERE Remark='Defected'),0) +
+IFNULL((SELECT SUM(Quantity) FROM project_lab WHERE Remark='Defected'),0)
+AS defected_pc
+";
+$defected_pc = mysqli_fetch_assoc(mysqli_query($conn, $defected_query))['defected_pc'];
+
+
+/* ==========================================
+   UNDER MAINTENANCE (Maintenance = 'Yes')
+   ========================================== */
+$maintenance_query = "
+SELECT
+IFNULL((SELECT SUM(Quantity) FROM networking_lab WHERE Maintenance='Yes'),0) +
+IFNULL((SELECT SUM(Quantity) FROM programming_lab1 WHERE Maintenance='Yes'),0) +
+IFNULL((SELECT SUM(Quantity) FROM programming_lab2 WHERE Maintenance='Yes'),0) +
+IFNULL((SELECT SUM(Quantity) FROM project_lab WHERE Maintenance='Yes'),0)
+AS maintenance_pc
+";
+$maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['maintenance_pc'];
+
+
+/* ==========================================
+   DEPARTMENT TOTALS
+   ========================================== */
+
+// /* Computer Department */
+// $computer_query = "
+// SELECT
+// IFNULL((SELECT SUM(Quantity) FROM project_lab),0) +
+// IFNULL((SELECT SUM(Quantity) FROM software_development_lab),0) +
+// IFNULL((SELECT SUM(Quantity) FROM networking_lab),0) +
+// IFNULL((SELECT SUM(Quantity) FROM programming_lab2),0) +
+// IFNULL((SELECT SUM(Quantity) FROM programming_lab1),0)
+// AS total
+// ";
+
+// $computer_total = mysqli_fetch_assoc(mysqli_query($conn, $computer_query))['total'];
+
+
+// /* AI Department (CHANGE TABLE NAMES IF NEEDED) */
+// $ai_query = "
+// SELECT
+// IFNULL((SELECT SUM(Quantity) FROM an_programming_lab1),0) +
+// IFNULL((SELECT SUM(Quantity) FROM an_programming_lab2),0)
+// AS total
+// ";
+// $ai_total = mysqli_fetch_assoc(mysqli_query($conn, $ai_query))['total'];
+
+// /* Electrical Department */
+// $electrical_query = "
+// SELECT IFNULL((SELECT SUM(Quantity) FROM basic_electrical_engineering_laboratory),0) AS total
+// ";
+// $electrical_total = mysqli_fetch_assoc(mysqli_query($conn, $electrical_query))['total'];
+
+// /* Electronics Department */
+// $electronics_query = "
+// SELECT IFNULL((SELECT SUM(Quantity) FROM basic_electronics_lab),0) AS total
+// ";
+// $electronics_total = mysqli_fetch_assoc(mysqli_query($conn, $electronics_query))['total'];
+
+// /* Mechanical Department */
+// $mechanical_query = "
+// SELECT IFNULL((SELECT SUM(Quantity) FROM me_lab_3),0) AS total
+// ";
+// $mechanical_total = mysqli_fetch_assoc(mysqli_query($conn, $mechanical_query))['total'];
+// ?>
+
+
+
 
 
 <body>
@@ -71,7 +182,7 @@ include '../common/header_link.php';
                           <p>Overview of Latest Month</p>
 
                           <div class="earn">
-                            <h2>$3367.98</h2>
+                            <h2>3367</h2>
                             <p>Current Month Sales</p>
                           </div>
                           <div class="sale mb-3">
@@ -88,22 +199,18 @@ include '../common/header_link.php';
                           <div class="tabs-wrapper">
                             <ul class="nav nav-pills chart-header-tab mb-3" id="pills-tab" role="tablist">
                               <li class="nav-item">
-                                <a href="#" class="nav-link chart-nav  active" id="pills-week-tab" data-bs-toggle="pill" data-bs-target="#pills-week" type="button" role="tab" aria-controls="pills-week" aria-selected="true">Week</a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="#" class="nav-link chart-nav " id="pills-month-tab" data-bs-toggle="pill" data-bs-target="#pills-month" type="button" role="tab" aria-controls="pills-month" aria-selected="false">Month</a>
+                                <a href="#" class="nav-link chart-nav  active" id="pills-week-tab" data-bs-toggle="pill" data-bs-target="#pills-month" type="button" role="tab" aria-controls="pills-month" aria-selected="true">Month</a>
                               </li>
                               <li class="nav-item">
                                 <a href="#" class="nav-link chart-nav " id="pills-year-tab" data-bs-toggle="pill" data-bs-target="#pills-year" type="button" role="tab" aria-controls="pills-year" aria-selected="false">Year</a>
                               </li>
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
-                              <div class="tab-pane fade show active" id="pills-week" role="tabpanel" aria-labelledby="pills-week-tab">
+                              <div class="tab-pane fade show active" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
                                 <div class="box">
                                   <div id="bar"></div>
                                 </div>
                               </div>
-                              <div class="tab-pane fade" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">month</div>
                               <div class="tab-pane fade" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab">year</div>
                             </div>
                           </div>
@@ -123,9 +230,7 @@ include '../common/header_link.php';
                               <p class="name-text" style="color:black;">
                                 Total PC
                               </p>
-                              <h6 class="balance-text">
-                                1684
-                              </h6>
+                              <h6 class="balance-text"><?php echo $total_pc; ?></h6>
                             </div>
                           </div>
                         </div>
@@ -138,9 +243,7 @@ include '../common/header_link.php';
                               <p class="name-text" style="color:black;">
                                 Working PC
                               </p>
-                              <h6 class="balance-text">
-                                1204
-                              </h6>
+                              <h6 class="balance-text"><?php echo $working_pc; ?></h6>
                             </div>
                           </div>
                         </div>
@@ -153,9 +256,7 @@ include '../common/header_link.php';
                               <p class="name-text" style="color:black;">
                                 Defected PC
                               </p>
-                              <h6 class="balance-text">
-                                400
-                              </h6>
+                              <h6 class="balance-text"><?php echo $defected_pc; ?></h6>
                             </div>
                           </div>
                         </div>
@@ -168,9 +269,7 @@ include '../common/header_link.php';
                               <p class="name-text" style="color:black;">
                                 Under Maintenance
                               </p>
-                              <h6 class="balance-text">
-                                80
-                              </h6>
+                              <h6 class="balance-text"><?php echo $maintenance_pc; ?></h6>
                             </div>
                           </div>
                         </div>
@@ -181,13 +280,30 @@ include '../common/header_link.php';
 
                 <div class="col-lg-4">
                   <div class="bg-white top-chart-earn">
-                    <div class="traffice-title">
-                      <p>Traffice</p>
-                    </div>
-                    <div class="box">
-                      <div id="donut"></div>
+                    <div id="donut"></div>
+                  </div>
+
+                  <div class="bg-white top-chart-earn mt-3">
+                    <div class="classic-tabs">
+                      <!-- Nav Tabs -->
+                      <div class="tabs-wrapper">
+                        <ul class="nav nav-pills year-tab mb-3" id="year-tab" role="tablist">
+
+                          <li class="nav-item">
+                            <a href="#" class="nav-link chart-nav  active" id="year-2024-tab" data-bs-toggle="pill" data-bs-target="#pills-2024" type="button" role="tab" aria-controls="pills-week" aria-selected="true">2024</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link chart-nav " id="year-2025-tab" data-bs-toggle="pill" data-bs-target="#pills-2025" type="button" role="tab" aria-controls="pills-month" aria-selected="false">2025</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link chart-nav " id="year-2026-tab" data-bs-toggle="pill" data-bs-target="#pills-2026" type="button" role="tab" aria-controls="pills-year" aria-selected="false">2026</a>
+                          </li>
+
+                        </ul>
+                      </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -199,14 +315,14 @@ include '../common/header_link.php';
                 <div class="row">
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
                     <a href="computer_department/networking_lab.php">
-                      <div class="revinue revinue-one_hybrid">
+                      <div class="revinue revinue-one_hybrid w-px-350">
                         <div class="revinue-hedding">
                           <div class="w-title">
                             <div class="w-icon">
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value">100</p>
+                              <p class="w-value"><?php echo $computer_total; ?></p>
                               <h5 style="color: white;">Computer Department</h5>
                             </div>
                           </div>
@@ -218,14 +334,14 @@ include '../common/header_link.php';
 
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
                     <a href="AI_department/AN_programming_lab1.php">
-                      <div class="revinue revinue-one_hybrid">
+                      <div class="revinue revinue-one_hybrid w-px-350">
                         <div class="revinue-hedding">
                           <div class="w-title">
                             <div class="w-icon">
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value">60</p>
+                              <p class="w-value"><?php echo $ai_total; ?></p>
                               <h5 style="color: white;">Artificial Intelligence Department</h5>
                             </div>
                           </div>
@@ -236,14 +352,14 @@ include '../common/header_link.php';
 
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
                     <a href="electrical_department/basic_electrical_engineering_laboratory.php" style="text-decoration: none;">
-                      <div class="revinue revinue-one_hybrid">
+                      <div class="revinue revinue-one_hybrid w-px-350">
                         <div class="revinue-hedding">
                           <div class="w-title">
                             <div class="w-icon">
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value">50</p>
+                              <p class="w-value"><?php echo $electrical_total; ?></p>
                               <h5 style="color: white;">Electrical Department</h5>
                             </div>
                           </div>
@@ -254,14 +370,14 @@ include '../common/header_link.php';
 
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
                     <a href="Electronics_department/basic_electronics_lab.php" style="text-decoration: none;">
-                      <div class="revinue revinue-one_hybrid">
+                      <div class="revinue revinue-one_hybrid w-px-350">
                         <div class="revinue-hedding">
                           <div class="w-title">
                             <div class="w-icon">
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value">50</p>
+                              <p class="w-value"><?php echo $electronics_total; ?></p>
                               <h5 style="color: white;">Electronics Department</h5>
                             </div>
                           </div>
@@ -272,14 +388,14 @@ include '../common/header_link.php';
 
                   <div class="col-lg-4 col-md-6 col-sm-6 my-2">
                     <a href="Mechanical_department/me_lab_3.php" style="text-decoration: none;">
-                      <div class="revinue revinue-one_hybrid">
+                      <div class="revinue revinue-one_hybrid w-px-350">
                         <div class="revinue-hedding">
                           <div class="w-title">
                             <div class="w-icon">
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value">50</p>
+                              <p class="w-value"><?php echo $mechanical_total; ?></p>
                               <h5 style="color: white;">Mechanical Department</h5>
                             </div>
                           </div>

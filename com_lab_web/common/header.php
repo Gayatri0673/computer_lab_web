@@ -25,8 +25,8 @@
       <!-- User -->
       <li class="nav-item navbar-dropdown dropdown-user dropdown">
         <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-          <div class="avatar avatar-online">
-            <img src="../assets/img/avatars/6.png" alt class="w-px-40 h-auto rounded-circle" />
+          <div class="avatar ">
+            <i class="fa-solid fa-user w-px-40 h-auto rounded-circle"></i>
           </div>
         </a>
         <ul class="dropdown-menu dropdown-menu-end">
@@ -44,10 +44,6 @@
             <div class="dropdown-divider"></div>
           </li>
 
-
-          <li>
-
-          </li>
           <li>
             <a class="dropdown-item" href="../common/logout.php">
               <i class="bx bx-power-off me-2"></i>
