@@ -465,8 +465,8 @@ var optionDonut = {
       fontSize: '18px'
     }
   },
-  series: [35, 25, 20, 10, 10],
-  labels: ['Computer', 'AI & ML', 'Electrical', 'Electronics', 'Mechanical'],
+  series: [29, 12, 35, 13, 11],
+  labels: ['Networking Lab', 'Programming Lab1', 'Programming Lab2', 'Project Lab', 'Software Lab'],
   legend: {
     position: 'left',
     offsetY: 80
