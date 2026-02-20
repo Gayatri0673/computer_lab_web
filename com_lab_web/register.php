@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+// require_once '../PHPMailer/src/PHPMailer.php';
+// require_once '../PHPMailer/src/SMTP.php';
+// require_once '../PHPMailer/src/Exception.php';
+
+
 $conn = mysqli_connect("localhost", "root", "", "computer");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -12,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $branch = trim($_POST['branch']);
     $post = $_POST['post'];
     $lab = trim($_POST['lab']);
+   $user_email = $_POST['email'];
     $user_name = trim($_POST['user_name']);
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
@@ -47,25 +53,51 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepared statement (safe)
     $stmt = $conn->prepare(
-        "INSERT INTO register (name, branch, post, lab, user_name, password)
-         VALUES (?, ?, ?, ?, ?, ?)"
+        "INSERT INTO register (name, branch, post, lab, email, user_name, password)
+         VALUES (?, ?, ?, ?, ?, ?, ?)"
     );
 
     $stmt->bind_param(
-        "ssssss",
+        "sssssss",
         $name,
         $branch,
         $post,
         $lab,
+        $user_email,
         $user_name,
         $hashed_password
     );
 
-    if ($stmt->execute()) {
-        echo "<script>alert('Registration successful'); window.location='login.php';</script>";
-    } else {
-        echo "<script>alert('Username already exists');</script>";
-    }
+//   $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+
+// try {
+//     $mail->isSMTP();
+//     $mail->Host       = 'smtp.gmail.com';
+//     $mail->SMTPAuth   = true;
+//     $mail->Username   = 'yourgmail@gmail.com';
+//     $mail->Password   = 'your_app_password';
+//     $mail->SMTPSecure = 'tls';
+//     $mail->Port       = 587;
+
+//     $mail->setFrom('yourgmail@gmail.com', 'Computer Lab System');
+//     $mail->addAddress($user_email, $name);
+
+//     $mail->isHTML(true);
+//     $mail->Subject = 'Registration Successful';
+//     $mail->Body = "
+//         <h3>Hello $name</h3>
+//         <p>Your account has been successfully registered.</p>
+//         <p><b>Username:</b> $user_name</p>
+//         <p><b>Role:</b> $post</p>
+//         <p>Thank you.</p>
+//     ";
+
+//     $mail->send();
+
+// } catch (PHPMailer\PHPMailer\Exception $e) {
+//     echo 'Mailer Error: ' . $e->getMessage();
+// }
+
 }
 ?>
 <!DOCTYPE html>
@@ -102,7 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="register-card">
             <h3>Register</h3>
-            <form method="POST">
+            <form method="POST" action="send_mail.php">
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Full Name</label>
@@ -128,6 +160,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="lab" class="form-label">Lab</label>
                     <input type="text" name="lab" id="lab" class="form-control" placeholder="Enter lab name">
                 </div>
+
+<div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+</div>
 
                 <div class="mb-3">
                     <label for="user_name" class="form-label">Username</label>
