@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $branch = trim($_POST['branch']);
     $post = $_POST['post'];
     $lab = trim($_POST['lab']);
-   $user_email = $_POST['email'];
+    $user_email = $_POST['email'];
     $user_name = trim($_POST['user_name']);
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
@@ -67,6 +67,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user_name,
         $hashed_password
     );
+
+    //   $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+
+    // try {
+    //     $mail->isSMTP();
+    //     $mail->Host       = 'smtp.gmail.com';
+    //     $mail->SMTPAuth   = true;
+    //     $mail->Username   = 'yourgmail@gmail.com';
+    //     $mail->Password   = 'your_app_password';
+    //     $mail->SMTPSecure = 'tls';
+    //     $mail->Port       = 587;
+
+    //     $mail->setFrom('yourgmail@gmail.com', 'Computer Lab System');
+    //     $mail->addAddress($user_email, $name);
+
+    //     $mail->isHTML(true);
+    //     $mail->Subject = 'Registration Successful';
+    //     $mail->Body = "
+    //         <h3>Hello $name</h3>
+    //         <p>Your account has been successfully registered.</p>
+    //         <p><b>Username:</b> $user_name</p>
+    //         <p><b>Role:</b> $post</p>
+    //         <p>Thank you.</p>
+    //     ";
+
+    //     $mail->send();
+
+    // } catch (PHPMailer\PHPMailer\Exception $e) {
+    //     echo 'Mailer Error: ' . $e->getMessage();
+    // }
 
 //   $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
@@ -167,6 +197,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
                 <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3">
                     <label for="user_name" class="form-label">Username</label>
                     <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Create username" required>
                 </div>
@@ -183,6 +218,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <button class="btn btn-primary w-100">Register</button>
 
+                <div class="text-center mt-3">
+                    <small>Do you have an account? <a href="login.php">log in</a></small>
+                </div>
             </form>
         </div>
     </div>

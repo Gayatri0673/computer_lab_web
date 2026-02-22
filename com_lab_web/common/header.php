@@ -45,7 +45,7 @@
           </li>
 
           <li>
-            <a class="dropdown-item" href="../common/logout.php">
+            <a class="dropdown-item" href="../landing_page.php">
               <i class="bx bx-power-off me-2"></i>
               <span class="align-middle">Log Out</span>
             </a>

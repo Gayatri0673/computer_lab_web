@@ -114,6 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p><b>Role:</b> $post</p>
                 <p><b>Branch:</b> $branch</p>
                 <p><b>Lab:</b> $lab</p>
+                <p><b>Time & Date:</b> $created_at</p>
                 <br>
                 <p>Thank you for using Computer Lab System.</p>
             ";
