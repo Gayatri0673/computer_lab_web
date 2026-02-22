@@ -139,7 +139,8 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
 // SELECT IFNULL((SELECT SUM(Quantity) FROM me_lab_3),0) AS total
 // ";
 // $mechanical_total = mysqli_fetch_assoc(mysqli_query($conn, $mechanical_query))['total'];
-// ?>
+// 
+?>
 
 
 
@@ -199,11 +200,11 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                           <div class="tabs-wrapper">
                             <ul class="nav nav-pills chart-header-tab mb-3" id="pills-tab" role="tablist">
                               <li class="nav-item">
-                                <a href="#" class="nav-link chart-nav  active" id="pills-week-tab" data-bs-toggle="pill" data-bs-target="#pills-month" type="button" role="tab" aria-controls="pills-month" aria-selected="true">Month</a>
+                                <a href="#" class="nav-link chart-nav  active" id="pills-month-tab" data-bs-toggle="pill" data-bs-target="#pills-month" type="button" role="tab" aria-controls="pills-month" aria-selected="true">Month</a>
                               </li>
-                              <li class="nav-item">
+                              <!-- <li class="nav-item">
                                 <a href="#" class="nav-link chart-nav " id="pills-year-tab" data-bs-toggle="pill" data-bs-target="#pills-year" type="button" role="tab" aria-controls="pills-year" aria-selected="false">Year</a>
-                              </li>
+                              </li> -->
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
                               <div class="tab-pane fade show active" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
@@ -211,7 +212,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                                   <div id="bar"></div>
                                 </div>
                               </div>
-                              <div class="tab-pane fade" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab">year</div>
+                              <!-- <div class="tab-pane fade" id="pills-year" role="tabpanel" aria-labelledby="pills-year-tab">year</div> -->
                             </div>
                           </div>
                         </div>
@@ -300,6 +301,9 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                           </li>
 
                         </ul>
+                        <div class="tab-pane fade" style="color: black;" id="pills-2024" role="tabpanel" aria-labelledby="year-2024-tab">Total PC Count:500</div>
+                        <div class="tab-pane fade" style="color: black;" id="pills-2025" role="tabpanel" aria-labelledby="year-2025-tab">Total PC Count:700</div>
+                        <div class="tab-pane fade" style="color: black;" id="pills-2026" role="tabpanel" aria-labelledby="year-2026-tab">Total PC Count:<?php echo $total_pc; ?></div>
                       </div>
                     </div>
                   </div>
@@ -322,7 +326,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $computer_total; ?></p>
+                              <p class="w-value">224</p>
                               <h5 style="color: white;">Computer Department</h5>
                             </div>
                           </div>
@@ -341,7 +345,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $ai_total; ?></p>
+                              <p class="w-value">187</p>
                               <h5 style="color: white;">Artificial Intelligence Department</h5>
                             </div>
                           </div>
@@ -359,7 +363,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $electrical_total; ?></p>
+                              <p class="w-value">128</p>
                               <h5 style="color: white;">Electrical Department</h5>
                             </div>
                           </div>
@@ -377,7 +381,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $electronics_total; ?></p>
+                              <p class="w-value">112</p>
                               <h5 style="color: white;">Electronics Department</h5>
                             </div>
                           </div>
@@ -395,7 +399,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                               <span class="fas fa-computer"></span>
                             </div>
                             <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $mechanical_total; ?></p>
+                              <p class="w-value">45</p>
                               <h5 style="color: white;">Mechanical Department</h5>
                             </div>
                           </div>
