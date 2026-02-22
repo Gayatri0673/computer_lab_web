@@ -98,6 +98,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //     echo 'Mailer Error: ' . $e->getMessage();
     // }
 
+//   $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+
+// try {
+//     $mail->isSMTP();
+//     $mail->Host       = 'smtp.gmail.com';
+//     $mail->SMTPAuth   = true;
+//     $mail->Username   = 'yourgmail@gmail.com';
+//     $mail->Password   = 'your_app_password';
+//     $mail->SMTPSecure = 'tls';
+//     $mail->Port       = 587;
+
+//     $mail->setFrom('yourgmail@gmail.com', 'Computer Lab System');
+//     $mail->addAddress($user_email, $name);
+
+//     $mail->isHTML(true);
+//     $mail->Subject = 'Registration Successful';
+//     $mail->Body = "
+//         <h3>Hello $name</h3>
+//         <p>Your account has been successfully registered.</p>
+//         <p><b>Username:</b> $user_name</p>
+//         <p><b>Role:</b> $post</p>
+//         <p>Thank you.</p>
+//     ";
+
+//     $mail->send();
+
+// } catch (PHPMailer\PHPMailer\Exception $e) {
+//     echo 'Mailer Error: ' . $e->getMessage();
+// }
+
 }
 ?>
 <!DOCTYPE html>
@@ -160,6 +190,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="lab" class="form-label">Lab</label>
                     <input type="text" name="lab" id="lab" class="form-control" placeholder="Enter lab name">
                 </div>
+
+<div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+</div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
