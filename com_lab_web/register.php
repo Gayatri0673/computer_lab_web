@@ -9,173 +9,129 @@ if (!$conn) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = trim($_POST['name']);
-    $branch = trim($_POST['branch']);
     $post = $_POST['post'];
+    $branch = trim($_POST['branch']);
     $lab = trim($_POST['lab']);
-    $user_name = trim($_POST['user_name']);
+    $email = trim($_POST['email']);
+    $username = trim($_POST['user_name']);
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    // Password match check
+    // All required validation
+    if (empty($name) || empty($post) || empty($branch) || empty($lab) || empty($email) || empty($username) || empty($password) || empty($confirm_password)) {
+        echo "<script>alert('All fields are required');</script>";
+        exit();
+    }
+
     if ($password !== $confirm_password) {
         echo "<script>alert('Passwords do not match');</script>";
         exit();
     }
 
-    // Role-based logic
-    if ($post == "principal") {
-        $branch = NULL;
-        $lab = NULL;
-    } elseif ($post == "hod") {
-        if (empty($branch)) {
-            echo "<script>alert('Branch is required for HOD');</script>";
-            exit();
-        }
-        $lab = NULL;
-    } elseif ($post == "lab-assistant") {
-        if (empty($branch) || empty($lab)) {
-            echo "<script>alert('Branch and Lab are required');</script>";
-            exit();
-        }
-    } else {
-        echo "<script>alert('Invalid role selected');</script>";
-        exit();
-    }
-
-    // Hash password
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // Prepared statement (safe)
-    $stmt = $conn->prepare(
-        "INSERT INTO register (name, branch, post, lab, user_name, password)
-         VALUES (?, ?, ?, ?, ?, ?)"
-    );
-
-    $stmt->bind_param(
-        "ssssss",
-        $name,
-        $branch,
-        $post,
-        $lab,
-        $user_name,
-        $hashed_password
-    );
+    $stmt = $conn->prepare("INSERT INTO register (name, branch, post, lab, email, user_name, password) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssss", $name, $branch, $post, $lab, $email, $username, $hashed_password);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Registration successful'); window.location='login.php';</script>";
+        echo "<script>alert('Registration Successful'); window.location='login.php';</script>";
     } else {
-        echo "<script>alert('Username already exists');</script>";
+        echo "<script>alert('Error: Username or Email may already exist');</script>";
     }
+
+    $stmt->close();
 }
 ?>
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: #f5f5f5;
-        }
+<meta charset="UTF-8">
+<title>Register</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        .register-card {
-            max-width: 450px;
-            margin: 80px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e4f8a, #3b82f6);
+    overflow: hidden; /* No scroll */
+}
 
-        .register-card h3 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-    </style>
+.card-box {
+    width: 380px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-box h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #1e4f8a;
+}
+
+.form-control, .form-select {
+    height: 38px;
+    font-size: 14px;
+}
+
+.btn-custom {
+    background: linear-gradient(135deg, #1e4f8a, #3b82f6);
+    border: none;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn-custom:hover {
+    opacity: 0.9;
+}
+</style>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="register-card">
-            <h3>Register</h3>
-            <form method="POST">
+<div class="card-box">
+    <h4>Register</h4>
 
-                <div class="mb-3">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required>
-                </div>
+    <form method="POST">
 
-                <div class="mb-3">
-                    <label for="post" class="form-label">Post</label>
-                    <select name="post" id="post" class="form-select" required>
-                        <option value="">Select your post</option>
-                        <option value="principal">Principal</option>
-                        <option value="hod">HOD</option>
-                        <option value="lab-assistant">Lab Assistant</option>
-                    </select>
-                </div>
+        <input type="text" name="name" class="form-control mb-2" placeholder="Full Name" required>
 
-                <div class="mb-3">
-                    <label for="branch" class="form-label">Branch</label>
-                    <input type="text" name="branch" id="branch" class="form-control" placeholder="Enter branch">
-                </div>
+        <select name="post" class="form-select mb-2" required>
+            <option value="">Select Role</option>
+            <option value="principal">Principal</option>
+            <option value="hod">HOD</option>
+            <option value="lab-assistant">Lab Assistant</option>
+        </select>
 
-                <div class="mb-3" id="labDiv">
-                    <label for="lab" class="form-label">Lab</label>
-                    <input type="text" name="lab" id="lab" class="form-control" placeholder="Enter lab name">
-                </div>
+        <input type="text" name="branch" class="form-control mb-2" placeholder="Branch" required>
 
-                <div class="mb-3">
-                    <label for="user_name" class="form-label">Username</label>
-                    <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Create username" required>
-                </div>
+        <input type="text" name="lab" class="form-control mb-2" placeholder="Lab" required>
 
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Create password" required>
-                </div>
+        <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
 
-                <div class="mb-3">
-                    <label for="confirm_password" class="form-label">Confirm Password</label>
-                    <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm password" required>
-                </div>
+        <input type="text" name="user_name" class="form-control mb-2" placeholder="Username" required>
 
-                <button class="btn btn-primary w-100">Register</button>
+        <input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
 
-            </form>
+        <input type="password" name="confirm_password" class="form-control mb-3" placeholder="Confirm Password" required>
+
+        <button type="submit" class="btn btn-custom text-white w-100">
+            Register
+        </button>
+
+        <div class="text-center mt-2">
+            <small><a href="login.php">Already have account?</a></small>
         </div>
-    </div>
 
-    <script>
-        const postSelect = document.getElementById("post");
-        const labDiv = document.getElementById("labDiv");
-        const branchInput = document.querySelector("input[name='branch']");
-
-        function toggleFields() {
-            const role = postSelect.value;
-            if (role === "principal") {
-                labDiv.style.display = "none";
-                branchInput.parentElement.style.display = "none";
-            } else if (role === "hod") {
-                labDiv.style.display = "none";
-                branchInput.parentElement.style.display = "block";
-            } else if (role === "lab-assistant") {
-                labDiv.style.display = "block";
-                branchInput.parentElement.style.display = "block";
-            } else {
-                labDiv.style.display = "block";
-                branchInput.parentElement.style.display = "block";
-            }
-        }
-
-        postSelect.addEventListener("change", toggleFields);
-        window.addEventListener("load", toggleFields);
-    </script>
+    </form>
+</div>
 
 </body>
-
 </html>
