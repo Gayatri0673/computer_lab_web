@@ -29,7 +29,7 @@
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet" />
 </head>
 <?php
-include './com_lab_web/common/header_link.php';
+include '../../common/header_link.php';
 
 ?>
 <?php
@@ -44,7 +44,7 @@ if (!$conn) {
    ========================================== */
 $total_query = "
 SELECT
-IFNULL((SELECT SUM(Quantity) FROM networking_lab),0) 
+IFNULL((SELECT COUNT(*) FROM networking_lab),0) 
 AS total_pc
 ";
 $total_pc = mysqli_fetch_assoc(mysqli_query($conn, $total_query))['total_pc'];
@@ -55,7 +55,7 @@ $total_pc = mysqli_fetch_assoc(mysqli_query($conn, $total_query))['total_pc'];
    ========================================== */
 $working_query = "
 SELECT
-IFNULL((SELECT SUM(Quantity) FROM networking_lab WHERE Maintenance='No'),0)
+IFNULL((SELECT COUNT(*) FROM networking_lab WHERE Maintenance='No'),0)
 AS working_pc
 ";
 $working_pc = mysqli_fetch_assoc(mysqli_query($conn, $working_query))['working_pc'];
@@ -66,7 +66,7 @@ $working_pc = mysqli_fetch_assoc(mysqli_query($conn, $working_query))['working_p
    ========================================== */
 $defected_query = "
 SELECT
-IFNULL((SELECT SUM(Quantity) FROM networking_lab WHERE Remark='Defected'),0)
+IFNULL((SELECT COUNT(*) FROM networking_lab WHERE Remark='Defected'),0)
 AS defected_pc
 ";
 $defected_pc = mysqli_fetch_assoc(mysqli_query($conn, $defected_query))['defected_pc'];
@@ -77,7 +77,7 @@ $defected_pc = mysqli_fetch_assoc(mysqli_query($conn, $defected_query))['defecte
    ========================================== */
 $maintenance_query = "
 SELECT
-IFNULL((SELECT SUM(Quantity) FROM networking_lab WHERE Maintenance='Yes'),0)
+IFNULL((SELECT COUNT(*) FROM networking_lab WHERE Maintenance='Yes'),0)
 AS maintenance_pc
 ";
 $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['maintenance_pc'];
@@ -270,7 +270,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
       >
     </div> -->
   <?php
-  include '../../com_lab_web/common/footer_link.php';
+  include '../../../com_lab_web/common/footer_link.php';
 
   ?>
  

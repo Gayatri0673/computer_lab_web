@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+// require_once '../PHPMailer/src/PHPMailer.php';
+// require_once '../PHPMailer/src/SMTP.php';
+// require_once '../PHPMailer/src/Exception.php';
+
+
 $conn = mysqli_connect("localhost", "root", "", "computer");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
