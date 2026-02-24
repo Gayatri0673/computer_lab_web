@@ -138,5 +138,63 @@ body {
     </form>
 </div>
 
+<<<<<<< HEAD
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="user_name" class="form-label">Username</label>
+                    <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Create username" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Create password" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="confirm_password" class="form-label">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm password" required>
+                </div>
+
+                <button class="btn btn-primary w-100">Register</button>
+
+                <div class="text-center mt-3">
+                    <small>Do you have an account? <a href="login.php">log in</a></small>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const postSelect = document.getElementById("post");
+        const labDiv = document.getElementById("labDiv");
+        const branchInput = document.querySelector("input[name='branch']");
+
+        function toggleFields() {
+            const role = postSelect.value;
+            if (role === "principal") {
+                labDiv.style.display = "none";
+                branchInput.parentElement.style.display = "none";
+            } else if (role === "hod") {
+                labDiv.style.display = "none";
+                branchInput.parentElement.style.display = "block";
+            } else if (role === "lab-assistant") {
+                labDiv.style.display = "block";
+                branchInput.parentElement.style.display = "block";
+            } else {
+                labDiv.style.display = "block";
+                branchInput.parentElement.style.display = "block";
+            }
+        }
+
+        postSelect.addEventListener("change", toggleFields);
+        window.addEventListener("load", toggleFields);
+    </script>
+
+=======
+>>>>>>> 2999746e5c1117d473b47b34eddfed648f5d796c
 </body>
 </html>
