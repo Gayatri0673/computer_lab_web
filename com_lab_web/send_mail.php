@@ -62,6 +62,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($check_stmt->num_rows > 0) {
         die("<script>alert('Email or Username already exists'); window.history.back();</script>");
     }
+    // ===============================
+// ✅ Principal already exists check
+// ===============================
+if ($post == "principal") {
+    // Check if a Principal already exists
+    $checkPrincipal = $conn->prepare("SELECT id FROM register WHERE post = 'principal' LIMIT 1");
+    $checkPrincipal->execute();
+    $checkPrincipal->store_result();
+
+    if ($checkPrincipal->num_rows > 0) {
+        // Close statement and stop execution with alert
+        $checkPrincipal->close();
+        die("<script>
+                alert('Principal already exists! Cannot register again.');
+                window.history.back();
+             </script>");
+    }
+    $checkPrincipal->close();
+}
     $check_stmt->close();
 
     // ✅ Hash password
@@ -107,17 +126,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $mail->isHTML(true);
             $mail->Subject = 'Registration Successful';
-            $mail->Body = "
-                <h3>Hello $name,</h3>
-                <p>Your account has been successfully registered.</p>
-                <p><b>Username:</b> $user_name</p>
-                <p><b>Role:</b> $post</p>
-                <p><b>Branch:</b> $branch</p>
-                <p><b>Lab:</b> $lab</p>
-                <p><b>Time & Date:</b> $created_at</p>
-                <br>
-                <p>Thank you for using Computer Lab System.</p>
-            ";
+            $body = "
+    <h3>Hello $name,</h3>
+    <p>Your account has been successfully registered.</p>
+    <p><b>Username:</b> $user_name</p>
+    <p><b>Role:</b> $post</p>
+";
+
+// If NOT principal, show branch
+if ($post != "principal") {
+    $body .= "<p><b>Branch:</b> $branch</p>";
+}
+
+// If lab-assistant, show lab
+if ($post == "lab-assistant") {
+    $body .= "<p><b>Lab:</b> $lab</p>";
+}
+
+$body .= "
+    <br>
+    <p>Thank you for using Computer Lab System.</p>
+";
+
+$mail->Body = $body;
 
             $mail->send();
         } catch (Exception $e) {
