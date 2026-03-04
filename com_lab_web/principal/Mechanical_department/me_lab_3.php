@@ -25,12 +25,13 @@ include('../../common/header_link.php');
 <link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
 <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
 <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
+
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-            <?php include '../../common/sidebar_principal.php';?>
+            <?php include '../../common/sidebar_principal.php'; ?>
             <!-- / Menu -->
             <!-- Layout container -->
             <div class="layout-page">
@@ -55,7 +56,7 @@ include('../../common/header_link.php');
                                     <a href="./add_me_lab_3.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
-                                     <a href="./me_lab_3_status.php">
+                                    <a href="./me_lab_3_status.php">
                                         <button type="button" class="btn btn-primary m-4">Status</button>
                                     </a>
                                     <div class="text-center">
@@ -121,12 +122,12 @@ include('../../common/header_link.php');
                                                                 <button type="submit" name="delete_btn" class="btn rounded-pill btn-danger">Delete</button>
                                                             </form>
                                                         </div>
+
                                                     </td>
                                                 </tr>
                                             <?php
                                             }
                                             ?>
-
                                             <tr>
                                         </tbody>
                                     </table>
@@ -149,5 +150,6 @@ include('../../common/header_link.php');
             <!-- Overlay -->
             <div class="layout-overlay layout-menu-toggle"></div>
         </div>
-    </body>
+</body>
+
 </html>
