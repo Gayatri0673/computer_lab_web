@@ -44,11 +44,7 @@ if (!$conn) {
    ========================================== */
 $total_query = "
 SELECT
-IFNULL((SELECT COUNT(*) FROM networking_lab),0) +
-IFNULL((SELECT COUNT(*) FROM programming_lab1),0) +
-IFNULL((SELECT COUNT(*) FROM programming_lab2),0) +
-IFNULL((SELECT COUNT(*) FROM software_development_lab),0) +
-IFNULL((SELECT COUNT(*) FROM project_lab),0)
+IFNULL((SELECT COUNT(*) FROM 	me_lab_3),0) 
 AS total_pc
 ";
 $total_pc = mysqli_fetch_assoc(mysqli_query($conn, $total_query))['total_pc'];
@@ -59,10 +55,7 @@ $total_pc = mysqli_fetch_assoc(mysqli_query($conn, $total_query))['total_pc'];
    ========================================== */
 $working_query = "
 SELECT
-IFNULL((SELECT COUNT(*) FROM networking_lab WHERE Maintenance='No'),0) +
-IFNULL((SELECT COUNT(*) FROM programming_lab1 WHERE Maintenance='No'),0) +
-IFNULL((SELECT COUNT(*) FROM programming_lab2 WHERE Maintenance='No'),0) +
-IFNULL((SELECT COUNT(*) FROM project_lab WHERE Maintenance='No'),0)
+IFNULL((SELECT COUNT(*) FROM 	me_lab_3 WHERE Maintenance='No'),0)
 AS working_pc
 ";
 $working_pc = mysqli_fetch_assoc(mysqli_query($conn, $working_query))['working_pc'];
@@ -73,10 +66,7 @@ $working_pc = mysqli_fetch_assoc(mysqli_query($conn, $working_query))['working_p
    ========================================== */
 $defected_query = "
 SELECT
-IFNULL((SELECT COUNT(*) FROM networking_lab WHERE Remark='Defected'),0) +
-IFNULL((SELECT COUNT(*) FROM programming_lab1 WHERE Remark='Defected'),0) +
-IFNULL((SELECT COUNT(*) FROM programming_lab2 WHERE Remark='Defected'),0) +
-IFNULL((SELECT COUNT(*) FROM project_lab WHERE Remark='Defected'),0)
+IFNULL((SELECT COUNT(*) FROM 	me_lab_3 WHERE Remark='Defected'),0)
 AS defected_pc
 ";
 $defected_pc = mysqli_fetch_assoc(mysqli_query($conn, $defected_query))['defected_pc'];
@@ -86,10 +76,7 @@ $defected_pc = mysqli_fetch_assoc(mysqli_query($conn, $defected_query))['defecte
    ========================================== */
 $maintenance_query = "
 SELECT
-IFNULL((SELECT COUNT(*) FROM networking_lab WHERE Maintenance='Yes'),0) +
-IFNULL((SELECT COUNT(*) FROM programming_lab1 WHERE Maintenance='Yes'),0) +
-IFNULL((SELECT COUNT(*) FROM programming_lab2 WHERE Maintenance='Yes'),0) +
-IFNULL((SELECT COUNT(*) FROM project_lab WHERE Maintenance='Yes'),0)
+IFNULL((SELECT COUNT(*) FROM 	me_lab_3 WHERE Maintenance='Yes'),0) 
 AS maintenance_pc
 ";
 $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['maintenance_pc'];
@@ -102,7 +89,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
     <div class="layout-container">
       <!-- Menu -->
       <?php
-        include '../common/co_hod_sidebar.php';
+        include '../common/mechanical_hod_sidebar.php';
 
       ?>
       <!-- / Menu -->
@@ -251,8 +238,8 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                           </li>
 
                         </ul>
-                        <div class="tab-pane fade" style="color: black;" id="pills-2024" role="tabpanel" aria-labelledby="year-2024-tab">Total PC Count:100</div>
-                        <div class="tab-pane fade" style="color: black;" id="pills-2025" role="tabpanel" aria-labelledby="year-2025-tab">Total PC Count:150</div>
+                        <div class="tab-pane fade" style="color: black;" id="pills-2024" role="tabpanel" aria-labelledby="year-2024-tab">Total PC Count:15</div>
+                        <div class="tab-pane fade" style="color: black;" id="pills-2025" role="tabpanel" aria-labelledby="year-2025-tab">Total PC Count:20</div>
                         <div class="tab-pane fade" style="color: black;" id="pills-2026" role="tabpanel" aria-labelledby="year-2026-tab">Total PC Count:<?php echo $total_pc; ?></div>
                       </div>
                     </div>

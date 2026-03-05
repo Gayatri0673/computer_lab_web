@@ -25,12 +25,13 @@ include('../common/header_link.php');
 <link rel="stylesheet" href="../../../com_lab_web/assets/css/demo.css">
 <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/core.css">
 <link rel="stylesheet" href="../../../com_lab_web/assets/vendor/css/theme-default.css">
+
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
             <!-- Menu -->
-          <?php include '../common/AI_hod_sidebar.php';?>
+            <?php include '../common/AI_hod_sidebar.php'; ?>
             <!-- / Menu -->
             <!-- Layout container -->
             <div class="layout-page">
@@ -50,12 +51,13 @@ include('../common/header_link.php');
                                 <div class="col-lg-6 ">
                                 </div>
                                 <div class="col-lg-6 d-flex justify-content-end">
-                                    <input type="text" class="form-control border-black m-4 shadow-none" placeholder="Search..." aria-label="Search...">
-
+                                    <?php
+                                    include '../common/search_bar.php';
+                                    ?>
                                     <a href="./add_AN-03_software_development_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
-                                     <a href="./an_software_development_lab_status.php">
+                                    <a href="./an_software_development_lab_status.php">
                                         <button type="button" class="btn btn-primary m-4">Status</button>
                                     </a>
                                     <div class="text-center">
@@ -149,5 +151,6 @@ include('../common/header_link.php');
             <!-- Overlay -->
             <div class="layout-overlay layout-menu-toggle"></div>
         </div>
-    </body>
+</body>
+
 </html>

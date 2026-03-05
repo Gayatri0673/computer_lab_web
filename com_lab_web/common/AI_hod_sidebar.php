@@ -52,7 +52,7 @@ document.querySelectorAll('.menu-sub a').forEach(link => {
   <div class="sidebar app-brand demo">
     <a href="./index.php" class="app-brand-link">
       <span class="app-brand-text demo menu-text fw-bolder ms-2"></span>
-      <img src="../../assets/img/logo/logo-csmss.png" class="w-100" alt="csmss-logo">
+      <img src="../assets/img/logo/logo-csmss" class="w-100" alt="csmss-logo">
     </a>
     <a href="javascript:void(0);" 
        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -67,7 +67,7 @@ document.querySelectorAll('.menu-sub a').forEach(link => {
   <ul class="menu-inner py-1">
     <!-- Dashboard -->
     <li class="menu-item <?= isActive(['index.php']) ?>">
-      <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/computer_department/index.php"  class="menu-link">
+      <a href="<?= BASE_URL ?>computer_lab_web/com_lab_web/AI_department/index.php"  class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div data-i18n="Analytics">Dashboard</div>
       </a>
@@ -90,14 +90,14 @@ document.querySelectorAll('.menu-sub a').forEach(link => {
             <div>Programming Lab2</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['AN_software_development_lab.php']) ?>">
-          <a href="AN_software_development_lab.php" class="menu-link">
+        <li class="menu-item <?= isActive(['AN-03_software_development_lab.php']) ?>">
+          <a href="AN-03_software_development_lab.php" class="menu-link">
             <div>Software Development Lab</div>
           </a>
         </li>
-        <li class="menu-item <?= isActive(['AN_adavance_programming_lab.php']) ?>">
-          <a href="AN_adavance_programming_lab.php" class="menu-link">
-            <div>Adavance Programming Lab</div>
+        <li class="menu-item <?= isActive(['AN-04_advance_programming_lab.php']) ?>">
+          <a href="AN-04_advance_programming_lab.php" class="menu-link">
+            <div>Advance Programming Lab</div>
           </a>
         </li>
       </ul>
