@@ -30,16 +30,16 @@
           </div>
         </a>
         <ul class="dropdown-menu dropdown-menu-end">
-          <li>
+          <!-- <li>
             <a class="dropdown-item" href="#">
-              <div class="d-flex">
+              <!-- <div class="d-flex">
 
                 <div class="flex-grow-1 d-flex justify-content-center">
                   <small class="text-muted text-center">Admin</small>
-                </div>
-              </div>
-            </a>
-          </li>
+                </div> -->
+              <!-- </div> -->
+            <!-- </a>
+          </li> -->
           <li>
             <div class="dropdown-divider"></div>
           </li>

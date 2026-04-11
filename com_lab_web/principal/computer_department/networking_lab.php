@@ -59,8 +59,8 @@ include('../../common/header_link.php');
                                 </div>
 
                                 <div class="col-lg-6 d-flex justify-content-end">
-                                    <input type="text" class="form-control border-black m-4 shadow-none" placeholder="Search..." aria-label="Search...">
-
+                                    <?php include(__DIR__ . "/../../common/search_bar.php");
+                                ?>
                                     <a href="./add_networking_lab.php">
                                         <button type="button" class="btn btn-primary m-4">ADD+</button>
                                     </a>
@@ -81,7 +81,7 @@ include('../../common/header_link.php');
 
                             ?>
                                 <div class="table-responsive text-nowrap">
-                                    <table class="table table-hover">
+                                    <table id="lab-table" class="table table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Sr.No</th>
@@ -117,7 +117,7 @@ include('../../common/header_link.php');
                                                     <td><?php echo $project_row["Quantity"]; ?></td>
                                                     <td><?php echo $project_row["Amount"]; ?></td>
                                                     <td><?php echo $project_row["Remark"]; ?></td>
-                                                    <td><?php echo $project_row["configration"]; ?></td>
+                                                    <td><?php echo $project_row["configuration"]; ?></td>
                                                     <td><?php echo $project_row["Maintenance"]; ?></td>
                                                     <td>
                                                         <div>

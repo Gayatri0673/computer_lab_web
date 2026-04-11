@@ -58,7 +58,7 @@ $row = mysqli_fetch_assoc($result);
               <li class="list-group-item"><strong>Unit Rate:</strong> <?= $row['Unit_Rate']; ?></li>
               <li class="list-group-item"><strong>Quantity:</strong> <?= $row['Quantity']; ?></li>
               <li class="list-group-item"><strong>Amount:</strong> <?= $row['Amount']; ?></li>
-              <li class="list-group-item"><strong>Configuration:</strong> <?= $row['configration']; ?></li>
+              <li class="list-group-item"><strong>Configuration:</strong> <?= $row['configuration']; ?></li>
               <li class="list-group-item"><strong>Maintenance:</strong> <?= $row['Maintenance']; ?></li>
               <li class="list-group-item"><strong>Remarks:</strong> <?= $row['Remark']; ?></li>
             </ul>

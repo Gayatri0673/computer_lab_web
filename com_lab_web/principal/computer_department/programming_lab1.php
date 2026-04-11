@@ -83,7 +83,7 @@ include('../../common/header_link.php');
 
                             ?>
                                 <div class="table-responsive text-nowrap">
-                                    <table class="table table-hover">
+                                    <table id="lab-table" class="table table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Sr.No</th>

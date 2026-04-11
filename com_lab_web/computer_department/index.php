@@ -47,6 +47,7 @@ SELECT
 IFNULL((SELECT COUNT(*) FROM networking_lab),0) +
 IFNULL((SELECT COUNT(*) FROM programming_lab1),0) +
 IFNULL((SELECT COUNT(*) FROM programming_lab2),0) +
+IFNULL((SELECT COUNT(*) FROM software_development_lab),0) +
 IFNULL((SELECT COUNT(*) FROM project_lab),0)
 AS total_pc
 ";
@@ -261,105 +262,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
               </div>
             </div>
           </section>
-<!-- 
-          <section>
-            <div class="sm-chart-sec mt-3">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <a href="computer_department/networking_lab.php">
-                      <div class="revinue revinue-one_hybrid w-px-350">
-                        <div class="revinue-hedding">
-                          <div class="w-title">
-                            <div class="w-icon">
-                              <span class="fas fa-computer"></span>
-                            </div>
-                            <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $computer_total; ?></p>
-                              <h5 style="color: white;">Computer Department</h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
 
-
-                  <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <a href="AI_department/AN_programming_lab1.php">
-                      <div class="revinue revinue-one_hybrid w-px-350">
-                        <div class="revinue-hedding">
-                          <div class="w-title">
-                            <div class="w-icon">
-                              <span class="fas fa-computer"></span>
-                            </div>
-                            <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $ai_total; ?></p>
-                              <h5 style="color: white;">Artificial Intelligence Department</h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <a href="electrical_department/basic_electrical_engineering_laboratory.php" style="text-decoration: none;">
-                      <div class="revinue revinue-one_hybrid w-px-350">
-                        <div class="revinue-hedding">
-                          <div class="w-title">
-                            <div class="w-icon">
-                              <span class="fas fa-computer"></span>
-                            </div>
-                            <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $electrical_total; ?></p>
-                              <h5 style="color: white;">Electrical Department</h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <a href="Electronics_department/basic_electronics_lab.php" style="text-decoration: none;">
-                      <div class="revinue revinue-one_hybrid w-px-350">
-                        <div class="revinue-hedding">
-                          <div class="w-title">
-                            <div class="w-icon">
-                              <span class="fas fa-computer"></span>
-                            </div>
-                            <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $electronics_total; ?></p>
-                              <h5 style="color: white;">Electronics Department</h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 col-sm-6 my-2">
-                    <a href="Mechanical_department/me_lab_3.php" style="text-decoration: none;">
-                      <div class="revinue revinue-one_hybrid w-px-350">
-                        <div class="revinue-hedding">
-                          <div class="w-title">
-                            <div class="w-icon">
-                              <span class="fas fa-computer"></span>
-                            </div>
-                            <div class="sm-chart-text">
-                              <p class="w-value"><?php echo $mechanical_total; ?></p>
-                              <h5 style="color: white;">Mechanical Department</h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> -->
 
           <div class="content-backdrop fade"></div>
         </div>
