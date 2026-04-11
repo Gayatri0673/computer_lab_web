@@ -143,8 +143,7 @@ include('../../common/header_link.php');
                                                 ?>
                                                         <form method="POST">
                                                             <tr>
-                                                                <td><?= $row['sr_no']
-                                                                    ?></td>
+                                                                <td><?= $sr++ ?></td>
                                                                 <td>
                                                                     <select name="cpu_status" class="form-select" style="width: 109px;">
                                                                         <option value="OK" <?= ($row['cpu'] ?? '') == 'OK' ? 'selected' : '' ?>>OK</option>

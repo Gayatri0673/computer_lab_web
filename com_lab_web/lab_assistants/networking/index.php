@@ -240,6 +240,9 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                           </li>
 
                         </ul>
+                        <div class="tab-pane fade" style="color: black;" id="pills-2024" role="tabpanel" aria-labelledby="year-2024-tab">Total PC Count:30</div>
+                        <div class="tab-pane fade" style="color: black;" id="pills-2025" role="tabpanel" aria-labelledby="year-2025-tab">Total PC Count:40</div>
+                        <div class="tab-pane fade" style="color: black;" id="pills-2026" role="tabpanel" aria-labelledby="year-2026-tab">Total PC Count:<?php echo $total_pc; ?></div>
                       </div>
                     </div>
                   </div>

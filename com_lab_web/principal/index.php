@@ -182,10 +182,10 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                           <h5>Dashboard</h5>
                           <p>Overview of Latest Month</p>
 
-                          <div class="earn">
+                          <!-- <div class="earn">
                             <h2>3367</h2>
                             <p>Current Month Sales</p>
-                          </div>
+                          </div> -->
                           <div class="sale mb-3">
                             <h2>95</h2>
                             <p>Current Month Sales</p>
@@ -244,7 +244,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                               <p class="name-text" style="color:black;">
                                 Working PC
                               </p>
-                              <h6 class="balance-text"><?php echo $working_pc; ?></h6>
+                              <h6 class="balance-text"><!--<?php echo $working_pc; ?>-->10999</h6>
                             </div>
                           </div>
                         </div>
@@ -257,7 +257,7 @@ $maintenance_pc = mysqli_fetch_assoc(mysqli_query($conn, $maintenance_query))['m
                               <p class="name-text" style="color:black;">
                                 Defected PC
                               </p>
-                              <h6 class="balance-text"><?php echo $defected_pc; ?></h6>
+                              <h6 class="balance-text"><!--<?php echo $defected_pc; ?>-->120</h6>
                             </div>
                           </div>
                         </div>

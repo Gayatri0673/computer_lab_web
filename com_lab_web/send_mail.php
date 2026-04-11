@@ -115,13 +115,13 @@ if ($post == "principal") {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'sonkamblerohini8@gmail.com';
-            $mail->Password   = 'hsrsjcolmoaaxemq';
+            $mail->Username   = 'wajurkargayatri@gmail.com';
+            $mail->Password   = 'ufbeeryekvfttizo';
 
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
-            $mail->setFrom('sonkamblerohini8@gmail.com', 'Computer Lab System');
+            $mail->setFrom('wajurkargayatri@gmail.com', 'Computer Lab System');
             $mail->addAddress($user_email, $name);
 
             $mail->isHTML(true);

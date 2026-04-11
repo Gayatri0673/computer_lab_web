@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CSMSS College Computer Management System</title>
+    <title>Digital Computer Record System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -205,13 +205,16 @@
     <!-- HERO -->
     <div class="hero">
         <div class="hero-text">
-            <h1>CSMSS College Computer Management System</h1>
+            <h1>Digital Computer Record System</h1>
             <p>Efficient Lab Computer Monitoring & Management Platform</p>
         </div>
 
         <div class="hero-img-wrapper">
             <img src="assets/img/first.png" alt="Dashboard">
-
+            <div class="auth-buttons">
+                <a href="./register.php" class="auth-btn" style="margin-right: 80px;">Register</a>
+                <!-- <a href="./logout.php" class="auth-btn">Logout</a> -->
+            </div>
             <div class="auth-buttons">
                 <a href="./login.php" class="auth-btn">Login</a>
                 <!-- <a href="./logout.php" class="auth-btn">Logout</a> -->
@@ -226,7 +229,7 @@
             <div class="manage-text">
                 <h2>Manage All Laboratory Computers in One Place</h2>
                 <p>
-                    The CSMSS College Computer Management System helps educational institutes monitor and manage
+                    The Digital Computer Record System helps educational institutes monitor and manage
                     multiple computer labs with role-based access for Principal, HOD,
                     and Lab Assistants.
                 </p>
@@ -238,7 +241,7 @@
         </div>
 
         <!-- USER ROLES -->
-         
+
         <h2 class="section-title">User Roles</h2>
 
         <div class="roles">
@@ -302,7 +305,7 @@
 
     <!-- FOOTER -->
     <div class="footer">
-         CSMSS College Computer Management System © 2026 | Developed by ....
+        Digital Computer Record System © 2026 | Developed by ....
     </div>
 
 </body>

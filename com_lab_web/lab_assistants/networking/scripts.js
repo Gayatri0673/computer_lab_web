@@ -465,8 +465,8 @@ var optionDonut = {
       fontSize: '18px'
     }
   },
-  series: [35, 25, 20, 10, 10],
-  labels: ['Computer', 'AI & ML', 'Electrical', 'Electronics', 'Mechanical'],
+  series: [10, 15, 20, 25, 30],
+  labels: ['2022', '2023', '2024', '2025', '2026'],
   legend: {
     position: 'left',
     offsetY: 80
